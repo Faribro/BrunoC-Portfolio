@@ -1,0 +1,88 @@
+@import url(../../../App.scss);
+
+.about-zone{  
+  width: 100%;
+  padding-top: 120px;
+  background-color: var(--bg-color);
+  color: var(--body-color);
+}
+
+.about-zone .container{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-zone .col-lg-6{
+  position: relative;
+  width: 100%;  
+  margin: -50px auto 0 auto;
+}
+
+.about-content .about-title {
+  font-size: 18px;
+  font-weight: 500;    
+  color: var(--subtitle-color);
+}
+
+.about-content .about { 
+  width: 80%; 
+  margin: 10px auto;
+}
+
+.Teste{
+  width: 100%;
+  padding-left: 100px;
+}
+
+.single-info{
+  width: 100%;  
+  display: flex!important;
+  align-items: center!important;
+}
+
+.about-content ul {padding-top: 15px;}
+
+.about-content ul li {
+  width: 50%;
+  float: left;
+  margin: 10px auto;
+}
+
+.about-content .single-info .info-icon .aboutIcon {
+  font-size: 16px;
+  color: var(--subtitle-color);
+}
+
+.about-content .single-info .info-text {
+  text-align: left;
+  margin-left: 10px;
+}
+
+.about-content .single-info .info-text p span {  color: var(--subtitle-color);}
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media (max-width: 767px) {
+  .about-content .about { 
+    width: 100%; 
+    margin: 10px auto;
+  }
+
+  .about-zone .col-lg-6{ margin: 0px auto; }
+  
+  .about-zone{  padding-bottom: 200px;  }
+
+  .about-zone .col-lg-6{  width: 80%;  }
+
+  .Teste{ padding-left: 10px; }
+  
+  .about-content ul {padding-top: 15px;}
+  
+  .about-content ul li {
+    width: 100%;
+    float: left;
+  }
+}

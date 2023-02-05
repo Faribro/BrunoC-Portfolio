@@ -1,0 +1,219 @@
+@import url(../../../App.scss);
+
+.wrapper {
+  background-color: var(--bg-color);
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrapper .container {
+  width: 100%;  
+  transition: all 0.4s ease;
+  display: flex;  
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper .container .p404 {
+  width: 60%;
+  height: 60%;
+  min-width: 400px;
+  min-height: 400px;
+  font-size: 200px;
+  margin-top: -70px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  color: var(--subtitle-color);
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
+  animation-delay: 1.2s;
+}
+
+.wrapper .container .p404 .content {
+  width: 600px;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: content 0.8s cubic-bezier(1, 0.06, 0.25, 1) backwards;
+}
+
+.wrapper .container .text {
+  width: 60%;
+  height: 40%;
+  min-width: 400px;
+  min-height: 500px;  
+  margin-top: -70px;
+  position: absolute;
+  animation: text 0.6s 1.8s ease backwards;
+}
+
+.wrapper .container .text article {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
+.wrapper .container .text article p {
+  color: var(--body-color);
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 0.6px;
+}
+
+.wrapper .container .text article button {
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 3;
+  color: var(--bg-color);
+  background-color: var(--subtitle-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  transition: all 0.3s ease;
+  margin-top: 40px;
+}
+
+.wrapper .container .text article button:hover {
+  background: var(--subtitle2-color);
+  color: white;
+}
+
+.erro-shape {
+  animation: anime404 0.6s cubic-bezier(0.3, 0.8, 1, 1.05) both;
+  animation-delay: 1.1s;
+  position: absolute !important;   
+  display: flex;
+  color: var(--subtitle-color);
+}
+
+.erroIcon-one {
+  top: 180px;  
+  left: 75%;
+  height: 15vmin;
+  width: 15vmin;   
+}
+
+.erroIcon-two {
+  height: 15vmin;
+  width: 15vmin;   
+  top: -80px;  
+  left: 20%; 
+}
+
+.erroIcon-three {
+  top: -100px;  
+  left: 80%;
+  height: 15vmin;
+  width: 15vmin;   
+}
+
+.erroIcon-four {
+  height: 15vmin;
+  width: 15vmin;   
+  top: -300px;  
+  left: 60%;
+}
+
+.erroIcon-five {
+  top: -380px;  
+  left: 78%;
+  height: 15vmin;
+  width: 15vmin;   
+}
+
+.erroIcon-six {
+  height: 15vmin;
+  width: 15vmin;   
+  bottom: 200px;  
+  left: 8%;
+}
+
+.erroIcon-seven {
+  top: 180px;  
+  left: 12%;    
+  height: 15vmin;
+  width: 15vmin;   
+}
+
+.erroIcon-eight {
+  height: 15vmin;
+  width: 15vmin;   
+  top: 250px;  
+  left: 35%;
+}
+
+.erroIcon-nine {
+  height: 15vmin;
+  width: 15vmin;   
+  top: 150px;  
+  left: 55%;
+}
+
+.erroIcon-ten {    
+  bottom: 270px;  
+  left: 43%;
+  height: 15vmin;
+  width: 15vmin;   
+}
+
+.erroIcon-onze {
+  height: 15vmin;
+  width: 15vmin;   
+  bottom: 140px;  
+  left: 28%; 
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+}
+
+@keyframes anime404 {
+  0% {
+    opacity: 0;
+    transform: scale(10) skew(20deg, 20deg);
+  }
+}
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media (max-width: 767px) {
+  .wrapper .container .text article p {  width: 70%; }
+
+  .wrapper .container .p404 { font-size: 180px;  }
+}
+
+@media (max-width: 350px) {  
+  .wrapper .container .p404 { font-size: 120px; }
+
+  .wrapper .container .text article p { width: 50%; }
+}

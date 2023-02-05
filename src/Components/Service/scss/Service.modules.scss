@@ -1,0 +1,118 @@
+@import url(../../../App.scss);
+
+.service-zone{ 
+  background-color: var(--bg-color); 
+  max-width: 1200px;
+  margin: auto;
+  padding-top: 160px;
+  padding-bottom: 100px;
+}
+
+.single-service {
+  height: 300px;
+  background-color: var(--bg-color);
+  border-bottom: 3px solid var(--subtitle-color);
+  border-radius: 5px;
+  padding-top: 50px;
+  margin: auto 20px;
+  flex-wrap: wrap;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+}
+
+.single-service .row{
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;  
+  flex-direction: row;
+}
+
+.iconService {
+  font-size: 60px;
+  color: var(--subtitle-color);
+  margin-top: 10px; 
+}
+
+.iconService:hover { color: var(--subtitle2-color); }
+
+.col-lg-4{
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  flex-wrap: wrap;  
+  max-width: 25%;
+}
+
+.col-md-6 {
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.single-service .service-content {margin-top: 11px;}
+
+.single-service .service-content .service-title{
+  width: 95%;
+  margin: auto;
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--subtitle-color);
+  margin-bottom: 20px;
+  user-select: none;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; 
+}
+
+.single-service .service-content .service-title:hover { color: var(--subtitle2-color); }
+
+.single-service:hover {
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  -moz-box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23);
+  box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); 
+}
+
+.service-content p{
+  width: 95%;
+  margin: auto;
+  color: var(--body-color);
+}
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media screen and (max-width: 763px) { 
+  .single-service{     
+    margin-top: 20px;
+    padding: 25px 0px; 
+  }
+
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: auto;
+  }  
+}
+
+@media screen and (max-width: 563px) {  
+  .single-service{ 
+    width: 50%; 
+    margin: 20px auto 0 auto;
+    height: auto;
+    padding-bottom: 50px;
+  }
+
+  .col-md-6 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin: auto;    
+  }   
+}

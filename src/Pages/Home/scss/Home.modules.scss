@@ -1,0 +1,400 @@
+@import url(../../../App.scss);
+
+.header-content {
+  height: 930px;
+  width: 100%;
+  padding-top: 80px;
+  position: relative;    
+  z-index: 1;
+  overflow: hidden;
+  background-color: var(--bg-color);
+}
+
+.header-content .container {
+  max-width: 1700px; 
+  display: block;
+  margin: auto;
+}
+
+.HomeTitle{ 
+  position: relative;
+  z-index: 4;
+  padding-top: 250px; 
+  width: 50%;
+  padding-left: 17%;
+  float: left;
+}
+
+.header-content-right {position: relative; }
+
+.main-btn1 {
+  display: inline-block;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0 40px;
+  font-size: 15px;
+  line-height: 48px;
+  border-radius: 50px;
+  cursor: pointer;
+  z-index: 5;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  -webkit-box-shadow: 0px 1px 8px 0px rgba(78, 89, 249, 0.55);
+  -moz-box-shadow: 0px 1px 8px 0px rgba(78, 89, 249, 0.55);
+  box-shadow: 0px 1px 8px 0px rgba(78, 89, 249, 0.55);
+  background-color: var(--subtitle-color);
+  color: var(--bg-color);
+  border-color: var(--subtitle-color);
+  text-transform: uppercase; 
+}
+
+.main-btn1:hover {
+  background-color: var(--bg-color);
+  color: var(--subtitle-color);
+  border: 1px solid var(--subtitle-color);
+}
+
+.header-content-right .sub-titleH {
+  font-size: 40px;  
+  text-align: left;
+  color: var(--subtitle-color);
+  text-transform: uppercase;
+  padding-bottom: 15px; 
+}
+
+.header-content-right .titleH {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;  
+  text-align: left;
+  padding-bottom: 15px; 
+}
+
+.titlePro{  
+  display: flex;
+  font-size: 40px;
+  color: var(--subtitle3-color);
+}
+
+.header-content-right .main-btn1 {
+  margin: 40px 0px;   
+  float: left;
+}
+
+.header-image {
+  max-width: 400px;
+  margin: auto auto auto 5%;
+  position: relative; 
+  float: left;
+  width: 50%;
+  padding-top: 150px;
+}
+
+.header-image::before {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 470px;
+  border: 900px solid var(--title-color);
+  border-radius: 15px;
+  top: 49.5%;
+  left: -5%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); 
+}
+
+.header-image img {
+  position: relative;
+  z-index: 5; 
+  min-width: 85%;
+  height: 440px;
+  border-radius: 15px;
+  border: 10px solid var(--subtitle-color);
+}
+
+.header-social {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;    
+  z-index: 4;
+  width: 100%; 
+}
+
+.header-social .container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}  
+
+.header-social .row {
+  display: block;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header-social .header-social-icon {position: relative;}
+
+.header-social .header-social-icon::before {    
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: var(--subtitle-color);
+  left: -82.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); 
+}
+
+.GitHubHeader, .LinkedinHeader{
+  width: 38px;
+  height: 23px;
+  display: inline-block;
+}
+
+.header-social .header-social-icon ul {
+  max-width: 40%;
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 80px;
+}
+
+.header-social .header-social-icon ul li {
+    display: inline-block;
+    margin-left: 13px; 
+}
+
+.header-social .header-social-icon ul li:first-child {margin-left: 0;}
+
+.header-social .header-social-icon ul li a {
+    color: var(--subtitle-color);
+    font-size: 28px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    border: 1px solid var(--subtitle-color);
+    text-align: center; 
+}
+
+.header-social .header-social-icon ul li a:hover {
+    background-color: var(--bg-color);
+    color: var(--body-color);
+    border-color: var(--body-color);
+}
+
+.backgroundCap{
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;   
+}
+
+.backgroundCap img{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  top: 0 !important;
+  left: 0 !important; 
+}
+
+.header-content .header-shape {
+  width: 100%;
+  position: absolute !important;      
+  z-index: 2;      
+}
+
+.header-content .header-shape.shape-one {
+  position: none;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  display: block;
+  align-items: center;
+  justify-items: center;
+}  
+
+.header-content .header-shape.shape-one img{
+  width: 1400px;
+  height: 100vh;
+}  
+
+.header-content .header-shape.shape-two {
+  width: 190px;
+  height: 190px;
+  top: 600px !important;
+  left: 13% !important; 
+  transform: rotate(-0.25turn);
+}
+
+.header-content .header-shape.shape-three {
+  width: 250px;
+  height: 250px;
+  left: 0% !important;
+  top: 0px !important;     
+}
+
+.header-content .header-shape.shape-four {
+  width: 300px;
+  height: 300px;
+  left: 85% !important;
+  top: 100px !important; 
+}
+
+.header-content .header-shape.shape-five {
+  width: 130px;
+  height: 130px;
+  left: 95% !important;
+  top: 700px !important;     
+}
+
+.paralax{
+  width: 100%;
+  position: absolute;
+  z-index: 2;    
+}
+
+.bakc{
+  width: 100%;
+  height: 930px;
+  position: absolute;
+  z-index: 3;
+  background: linear-gradient(0deg, var(--bg-color) 0%, rgba(252,69,69,0.1) 70%)!important;
+}
+
+.scroll-down {
+  height: 43px;
+  position: absolute;
+  bottom: 0;
+  z-index: 99;
+  bottom: 2em;
+  left: 49%;
+  border-radius: 50%;    
+  background-color: var(--subtitle-color);
+}
+
+.scroll-down:hover { background-color: var(--subtitle2-color); }
+
+.ArrowDown{
+  font-size: 43px;
+  color: var(--bg-color);  
+}
+
+.ArrowDown:hover{ color: var(--body-color); }
+
+/*===========================
+       RESPONSIVE CSS 
+===========================*/
+
+@media screen and (max-width: 1300px) {   
+  .header-content .header-shape.shape-one{
+    width: 110%;
+    height: 100vh;
+    left: -5% !important;
+    background-image: url(../Images/cover.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .HomeTitle{ padding-left: 7%; }
+
+  .header-content .header-shape.shape-one img{ display: none; }  
+}
+
+@media screen and (max-width: 960px) { 
+  .HomeTitle{
+    width: 100%;
+    float: none;
+    padding-left: 0%;
+  }
+
+  .titlePro{ display: block; }
+
+  .header-content-right .main-btn1 { float: none; }
+
+  .header-content-right .sub-titleH { text-align: center; }
+
+  .header-content-right .titleH { text-align: center; }
+
+  .header-image { display: none;}
+}
+
+@media screen and (max-width:767px) {
+  .scroll-down { left: 47.5%; }
+}
+
+@media screen and (max-width: 467px) {   
+  .HomeTitle{ padding-top: 200px; }
+
+  .titlePro{ font-size: 30px; }
+
+  .header-content-right {
+    position: relative;     
+    padding-bottom: 150px;
+  }
+
+  .header-content-right .sub-titleH { font-size: 30px; }
+
+  .header-content-right .titleH { font-size: 40px; }
+
+  .header-content{
+    height: auto;
+    padding-bottom: 150px;
+  }
+  
+  .header-content .row {
+    display: flex;
+    justify-content: left;
+  }
+
+  .header-social {
+    position: relative;
+    top: 20px;
+  }
+
+  .header-social .header-social-icon::before {  left: -62.5%;  }
+  
+  .header-social .header-social-icon ul { max-width: 100%; }
+
+  .header-content .header-shape.shape-two {
+    top: 650px !important;
+    left: 13% !important; 
+    transform: rotate(-0.25turn);
+  }
+  
+  .header-content .header-shape.shape-three { display: none; }
+  
+  .header-content .header-shape.shape-four { display: none; }
+  
+  .header-content .header-shape.shape-five {
+    left: 70% !important;
+    top: 0px !important;        
+    transform: rotate(-0.35turn);   
+  }
+  
+  .scroll-down { left: 44%; }
+}
