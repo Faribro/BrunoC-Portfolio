@@ -84,7 +84,7 @@ export function Projects() {
                                         <div class="project-image">
                                             <h2>Governo de SP</h2>
                                             <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img src={ Governo } alt="governo" /></a>                                                                                                                                                                            
-                                            <p>Um projeto feito no Proa em grupo, escolher um site e recriar o site do zero e o design. E o site que escolhemos foi recriar o site do Governo de SP, já que o design não agradava.</p>
+                                            <p>Um projeto feito no Proa em grupo, escolher um site e recriar o site do zero e o design. O site que escolhemos para recriar o site do Governo de SP, já que o design não agradava.</p>
                                         </div>                    
                                     </div>
                                 </div>

@@ -11,7 +11,6 @@ import Pokedex from '../../Pages/Projects/Image/pokedex.png';
 import Todolist from '../../Pages/Projects/Image/todolist.png';
 import Caoselheiro from '../../Pages/Projects/Image/caoselheiro.png';
 
-import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
 export function ProjectHome() {
@@ -38,7 +37,7 @@ export function ProjectHome() {
                                 </div>
                                 <div class="work-overlay">
                                     <div class="work-content">
-                                        <a class="work-title" href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank">Link do Projeto</a>
+                                        <a class="work-title" href="https://github.com/ibrunoc/Animal-Space" rel="noreferrer" target="_blank">Link do Projeto</a>
                                     </div>
                                 </div>
                             </div> 
@@ -51,7 +50,7 @@ export function ProjectHome() {
                                 </div> 
                                 <div class="work-overlay">
                                     <div class="work-content">
-                                        <a class="work-title" href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank">Link do Projeto</a>
+                                        <a class="work-title" href="https://github.com/ibrunoc/Governo-de-SP" rel="noreferrer" target="_blank">Link do Projeto</a>
                                     </div>
                                 </div>                   
                             </div> 
@@ -64,7 +63,7 @@ export function ProjectHome() {
                                 </div>
                                 <div class="work-overlay">
                                     <div class="work-content">
-                                        <a class="work-title" rel="noreferrer" href="https://agua-na-boca.vercel.app/" target="_blank">Link do Projeto</a>
+                                        <a class="work-title" rel="noreferrer" href="https://github.com/ibrunoc/Agua-Na-Boca" target="_blank">Link do Projeto</a>
                                     </div>
                                 </div>   
                             </div> 
@@ -78,7 +77,7 @@ export function ProjectHome() {
                                     </div>
                                     <div class="work-overlay">
                                         <div class="work-content">
-                                            <a class="work-title" rel="noreferrer" href="https://place-up.vercel.app/" target="_blank">Link do Projeto</a>
+                                            <a class="work-title" rel="noreferrer" href="https://github.com/Place-UP" target="_blank">Link do Projeto</a>
                                         </div>
                                     </div>  
                                 </div>
@@ -92,7 +91,7 @@ export function ProjectHome() {
                                         </div>
                                         <div class="work-overlay">
                                             <div class="work-content">
-                                                <a class="work-title" href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank">Link do Projeto</a>
+                                                <a class="work-title" href="https://github.com/ibrunoc/Clone_Instagram" rel="noreferrer" target="_blank">Link do Projeto</a>
                                             </div>
                                         </div>  
                                     </div> 
@@ -105,7 +104,7 @@ export function ProjectHome() {
                                         </div>
                                         <div class="work-overlay">
                                             <div class="work-content">
-                                                <a class="work-title" href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank">Link do Projeto</a>
+                                                <a class="work-title" href="https://github.com/ibrunoc/Pokedex" rel="noreferrer" target="_blank">Link do Projeto</a>
                                             </div>
                                         </div>  
                                     </div>  
@@ -120,7 +119,7 @@ export function ProjectHome() {
                                 </div>
                                 <div class="work-overlay">
                                     <div class="work-content">
-                                        <a class="work-title" rel="noreferrer" href="https://to-do-list-seven-mu.vercel.app/" target="_blank">Link do Projeto</a>
+                                        <a class="work-title" rel="noreferrer" href="https://github.com/ibrunoc/ToDoList" target="_blank">Link do Projeto</a>
                                     </div>
                                 </div>  
                             </div>
@@ -133,7 +132,7 @@ export function ProjectHome() {
                                 </div>
                                 <div class="work-overlay">
                                     <div class="work-content">
-                                        <a class="work-title" href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank">Link do Projeto</a>
+                                        <a class="work-title" href="https://github.com/ibrunoc/Blind-Vision" rel="noreferrer" target="_blank">Link do Projeto</a>
                                     </div>
                                 </div> 
                             </div>
@@ -146,7 +145,7 @@ export function ProjectHome() {
                                 </div>
                                 <div class="work-overlay">
                                     <div class="work-content">
-                                        <a class="work-title" href="https://ecoverse-caoselheiro.vercel.app/" rel="noreferrer" target="_blank">Link do Projeto</a>
+                                        <a class="work-title" href="https://github.com/ibrunoc/ecoverse-caoselheiro" rel="noreferrer" target="_blank">Link do Projeto</a>
                                     </div>
                                 </div> 
                             </div>
