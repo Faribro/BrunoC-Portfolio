@@ -131,7 +131,11 @@
 ===========================*/
 
   @media screen and (max-width: 768px) {
-    .skills{ width: 80%; }
+    .skills{ width: 90%; }
+
+    .CircularContainer, .CircularContainer2, .CircularContainer3 { width: 90%;}
+    
+    .frontTeste { width: 90%;}
   }
 
   @media screen and (max-width: 290px) {
