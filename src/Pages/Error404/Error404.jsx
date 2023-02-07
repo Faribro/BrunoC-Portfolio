@@ -32,23 +32,23 @@ export function Error() {
         <div>
             <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
             <MouseParallaxContainer>
-              <section class="error-404">           
+              <section className="error-404">           
                 <MouseParallaxChild factorX={0.04} factorY={0.1}>
-                    <AiFillHtml5 class="erro-shape erro-icon-one" />
-                    <FaCss3Alt class="erro-shape erro-icon-two" />
-                    <SiJavascript class="erro-shape erro-icon-three" />
-                    <FaPython class="erro-shape erro-icon-four" />
-                    <FaJava class="erro-shape erro-icon-five" />
-                    <SiTypescript class="erro-shape erro-icon-six" />
-                    <FaBootstrap class="erro-shape erro-icon-seven" />
-                    <FaReact class="erro-shape erro-icon-eight" />
-                    <SiPhp class="erro-shape erro-icon-nine" />
-                    <SiAdobephotoshop class="erro-shape erro-icon-ten" />
-                    <FaSass class="erro-shape erro-icon-eleven" />
+                    <AiFillHtml5 className="erro-shape erro-icon-one" />
+                    <FaCss3Alt className="erro-shape erro-icon-two" />
+                    <SiJavascript className="erro-shape erro-icon-three" />
+                    <FaPython className="erro-shape erro-icon-four" />
+                    <FaJava className="erro-shape erro-icon-five" />
+                    <SiTypescript className="erro-shape erro-icon-six" />
+                    <FaBootstrap className="erro-shape erro-icon-seven" />
+                    <FaReact className="erro-shape erro-icon-eight" />
+                    <SiPhp className="erro-shape erro-icon-nine" />
+                    <SiAdobephotoshop className="erro-shape erro-icon-ten" />
+                    <FaSass className="erro-shape erro-icon-eleven" />
                 </MouseParallaxChild>
 
-                <div class="container-erro"> 
-                  <h2 class="text-404">404</h2>   
+                <div className="container-erro"> 
+                  <h2 className="text-404">404</h2>   
                     <div className='text-erro'>
                         <p>Ué? Parece que você se perdeu...</p>
                         <p>Volte para a página inicial!</p>

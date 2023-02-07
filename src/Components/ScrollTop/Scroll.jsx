@@ -17,7 +17,7 @@ export const Scroll = () => {
   return isVisible ? (
     <div className="scroll-top">
       <a href="#top">
-        <MdArrowUpward className='Arrow' />
+        <MdArrowUpward className='arrow' />
       </a>
     </div>
   ) : null;

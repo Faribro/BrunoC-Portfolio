@@ -5,14 +5,14 @@ import { BsFillCalendarDateFill, BsFillEnvelopeFill, BsFillPhoneFill, BsFillMapF
 export function AboutMe() {
     return (
         <>
-            <section id="About" class="about-zone" data-aos="fade-up">
-                <div class="container">
-                    <div class="section-title">
-                        <h2 class="title">Sobre mim</h2>
+            <section id="About" className="about-zone" data-aos="fade-up">
+                <div className="container">
+                    <div className="section-title">
+                        <h2 className="title">Sobre mim</h2>
                         <hr />                         
                     </div> 
                     
-                    <div class="about-content">
+                    <div className="about-content">
                         <div className='about' data-aos="fade-up">
                             <h5 class="about-title">Olá, tudo bem?</h5><br />
                             <p>Eu me chamo Bruno, tenho 20 anos e atualmente estou morando em Jandira-SP e estou em busca do meu primeiro emprego como desenvolvedor.</p>                                     <br />   
@@ -24,25 +24,25 @@ export function AboutMe() {
                         <div className='information-about' data-aos="fade-up">
                             <ul>
                                 <li>
-                                    <div class="info-icon">
+                                    <div className="info-icon">
                                         <BsFillCalendarDateFill className='aboutIcon' />
                                         <p><span>Data de nascimento:</span> 06 Abril 2002</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="info-icon">
+                                    <div className="info-icon">
                                         <BsFillEnvelopeFill className='aboutIcon' />
                                         <p><span>E-mail:</span> bruno.costa.c06@gmail.com</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="info-icon">                                                
+                                    <div className="info-icon">                                                
                                         <BsFillPhoneFill className='aboutIcon' />
                                         <p><span>Telefone:</span> +55 (11)94388-4494</p>
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="info-icon">                                                                             
+                                    <div className="info-icon">                                                                             
                                         <BsFillMapFill className='aboutIcon' />
                                         <p><span>Endereço:</span> Jandira-SP</p>
                                     </div>

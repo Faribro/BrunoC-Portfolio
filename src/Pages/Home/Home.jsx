@@ -1,4 +1,5 @@
 import './Style/Home.modules.scss';
+import './Style/ShapeHome.modules.scss';
 import { useState, useEffect } from 'react';
 
 import Loading from '../../Components/Loading/Loading';
@@ -44,64 +45,60 @@ export function Home() {
             <Loading />:
                 <div>
                     <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
-                    <div className='imgBackground'></div> 
+                    <div className='img-background'></div> 
                       
                     <Header /> 
                     <MouseParallaxContainer>  
-                        <div id='Home' class="header-content">                                              
-                            <div className='bakc'/>
+                        <div id='Home' className="cover-content">                                              
+                            <div className='color-background'/>
 
-                            <div className='backgroundCap'>
+                            <div className='background-cover'>
                                 <img src={ backgroundCover }  alt="back"/>
                             </div>  
 
-                            <div className='paralax'>
+                            <div className='parallax-cover'>
                                 <MouseParallaxChild factorX={0.1} factorY={0.1}>
-                                    <div class="header-shape shape-one layer" data-depth="0.10">                                            
+                                    <div class="cover-shape shape-one layer" data-depth="0.10">                                            
                                         <img src={ shape1 }  alt="Shape" />
                                     </div>        
-                                    <div class="header-shape shape-two layer" data-depth="0.10">                                            
+                                    <div class="cover-shape shape-two layer" data-depth="0.10">                                            
                                         <img src={ shape2 }  alt="Shape"/>
                                     </div>  
-                                    <div class="header-shape shape-three layer" data-depth="0.10">                                            
+                                    <div class="cover-shape shape-three layer" data-depth="0.10">                                            
                                         <img src={ shape3 }  alt="Shape"/>
                                     </div>  
-                                    <div class="header-shape shape-four layer" data-depth="0.10">                                            
+                                    <div class="cover-shape shape-four layer" data-depth="0.10">                                            
                                         <img src={ shape4 }  alt="Shape"/>
                                     </div>  
-                                    <div class="header-shape shape-five layer" data-depth="0.10">                                            
+                                    <div class="cover-shape shape-five layer" data-depth="0.10">                                            
                                         <img src={ shape5 }  alt="Shape"/>
                                     </div>                          
                                 </MouseParallaxChild>
                             </div>  
 
-                            <div class="container">                    
-                                <div class="col-xl-5 col-lg-6">
-                                    <div className="HomeTitle">
-                                        <div class="header-content-right">
-                                            <h4 class="sub-titleH">Olá, Eu sou</h4>
-                                            <h1 class="titleH">Bruno Costa C.</h1>
-                                            <div class="titlePro">              
-                                                <Type />
-                                            </div>                                            
-                                            <a class="main-btn1" without rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1yN62QAxfL2RHPrZvQx9l3FpdnuzN2ZuK/view?usp=share_link">Baixar CV</a>
-                                        </div>           
-                                    </div>   
-                                    <div class="col-lg-6 offset-xl-1">
-                                        <div class="header-image d-none d-lg-block">
-                                            <img src={perfil} alt="perfil" />
-                                        </div> 
-                                    </div>     
-                                </div>  
+                            <div className="right-container">           
+                                <div className="info-cover">
+                                    <div className="cover-container-right">
+                                        <h4 className="sub-title-cover">Olá, Eu sou</h4>
+                                        <h1 className="title-cover">Bruno Costa C.</h1>
+                                        <div className="professions-cover">           
+                                            <Type />
+                                        </div>                                            
+                                        <a className="cover-btn" without rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1yN62QAxfL2RHPrZvQx9l3FpdnuzN2ZuK/view?usp=share_link">Baixar CV</a>
+                                    </div>           
+                                </div>   
+                                <div className="profile-image">
+                                    <img src={perfil} alt="perfil" />
+                                </div> 
                             </div>    
 
-                            <div class="header-social">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="header-social-icon">
+                            <div className="cover-social">
+                                <div className="info-social-cover">
+                                    <div className="cover-social-container">
+                                        <div className="cover-social-icon">
                                             <ul>
-                                                <li><a target="_blank" without rel="noreferrer" href="https://github.com/ibrunoc/"><BsGithub className='GitHubHeader'/></a></li>
-                                                <li><a target="_blank" without rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='LinkedinHeader' /></a></li>
+                                                <li><a target="_blank" without rel="noreferrer" href="https://github.com/ibrunoc/"><BsGithub className='github-cover'/></a></li>
+                                                <li><a target="_blank" without rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='linkedin-cover' /></a></li>
                                             </ul> 
                                         </div>          
                                     </div>                           
@@ -110,7 +107,7 @@ export function Home() {
 
                             <div className="scroll-down">
                                 <a href="#About">
-                                    <MdArrowDownward className='ArrowDown' />    
+                                    <MdArrowDownward className='arrow-down' />    
                                 </a>
                             </div>      
                         </div>      

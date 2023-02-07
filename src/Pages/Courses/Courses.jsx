@@ -51,8 +51,8 @@ export function Courses() {
                     <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
                     <HeaderCourse /> 
                     <section id='Courses' className="courses-zone">
-                        <div class="container">
-                            <div class="title">
+                        <div className="container">
+                            <div className="title">
                                 <h2>Formação Acadêmica</h2>            
                                 <hr />
                             </div>
@@ -72,9 +72,9 @@ export function Courses() {
                                     date="07/2018"
                                     icon={ <MicrolinsIco /> } >
                                     <h3>Meu primeiro curso e contato com a programação.</h3>   
-                                    <h2 class="titleCourse">Microlins</h2>             
+                                    <h2 className="titleCourse">Microlins</h2>             
                                     <hr />                  
-                                    <img class="logo-institute" alt='Microlins' src={ Microlins } />    
+                                    <img className="logo-institute" alt='Microlins' src={ Microlins } />    
                                 </VerticalTimelineElement>
 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }} 
@@ -89,8 +89,8 @@ export function Courses() {
                                     date="07/2018 - 02/2020"
                                     icon={ <MicrolinsIco /> } >
                                     <h3>Na Microlins eu escolhi programação de games e acabei fazendo estes cursos, o que não tem nada haver com programação de games.</h3> 
-                                    <h3 class="course">"Programação de Games"</h3>         
-                                    <div class="info-course">                                                        
+                                    <h3 className="course">"Programação de Games"</h3>         
+                                    <div className="info-course">                                                        
                                         <p>Informática;</p>
                                         <p>Microsoft Office (Excel, Word, PowerPoint, etc...);</p>
                                         <p>Pacote Adobe ( PhotoShop, AfterEffects, Illustrator );</p>
@@ -108,9 +108,9 @@ export function Courses() {
                                     icon={ <DankiIco /> } >
                                     <h3>Terminando a Microlins, fiquei um pouco desanimado por ser um curso desatualizado e não ser do que eu queria.</h3>
                                     <h3>E por anúncio no Youtube eu conheci a Danki Code.</h3>
-                                    <h2 class="titleCourse">Danki Code</h2>             
+                                    <h2 className="titleCourse">Danki Code</h2>             
                                     <hr />                                          
-                                    <img class="logo-institute" alt='Danki Code' src={ DankiCode }  />        
+                                    <img className="logo-institute" alt='Danki Code' src={ DankiCode }  />        
                                 </VerticalTimelineElement>
                                 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -119,8 +119,8 @@ export function Courses() {
                                     icon={ <DankiIco /> } >
                                     <h3>Na Danki Code aprendi realmente programação de games e me interessei por outras áreas de programação,
                                         e comprei o pacote Full-Stack Master, onde aprendi Desenvolvimento Web e estou aprendendo Desenvolvimento mobile.</h3>
-                                    <h3 class="course">Full-Stack Master</h3>
-                                    <div class="info-course">                                                        
+                                    <h3 className="course">Full-Stack Master</h3>
+                                    <div className="info-course">                                                        
                                         <p>Desenvolvedor Full-Stack;</p>
                                         <p>Desenvolvimento Mobile;</p>
                                         <p>Desenvolvimento de Games 2D e 3D;</p>
@@ -147,9 +147,9 @@ export function Courses() {
                                     date="05/2021"
                                     icon={ <ProaIco /> }>
                                     <h3>E na busca do meu primeiro emprego, eu conheci o Proa. Um instituto que ajuda, e dá suporte para o mercado de trabalho na área de programação.</h3>
-                                    <h2 class="titleCourse">Instituto PROA</h2>      
+                                    <h2 className="titleCourse">Instituto PROA</h2>      
                                     <hr />                                                                                                                                                               
-                                    <img class="logo-institute" alt='Proa' src={ Proa } />   
+                                    <img className="logo-institute" alt='Proa' src={ Proa } />   
                                 </VerticalTimelineElement>
                                 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -159,8 +159,8 @@ export function Courses() {
                                         <h3>Participei de um processo seletivo com 5 etapas em 05/2021 e não passei, fiz novamente em 12/2021 e dessa vez passei.</h3>
                                         <h3>O Proa não foi o curso que mais me ensinou, mas foi o mais importante. Em 6 meses eu realmente entendi como funcionava o mercado de programação, fiz amizades na área, tive um suporte de verdade
                                             e aumentei minha Networking.</h3>
-                                        <h3 class="course">Programador Web Java</h3>              
-                                        <div class="info-course">                                                        
+                                        <h3 className="course">Programador Web Java</h3>              
+                                        <div className="info-course">                                                        
                                             <p>HTML5;</p>
                                             <p>CSS3;</p>
                                             <p>JavaScript;</p>
@@ -179,11 +179,11 @@ export function Courses() {
                                     date="06/2022 - Atual"
                                     icon={ <UdemyIco /> }>
                                         <h3>Terminando o Proa, eu quis desenvolver o Inglês e continuar estudando e comecei esses cursos na Udemy:</h3>
-                                        <h2 class="titleCourse">Udemy</h2>             
+                                        <h2 className="titleCourse">Udemy</h2>             
                                         <hr />                                          
-                                        <img class="logo-institute" alt='Udemy' src={ Udemy } />   
-                                        <h3 class="course">Cursos Separados</h3>
-                                        <div class="info-course"> 
+                                        <img className="logo-institute" alt='Udemy' src={ Udemy } />   
+                                        <h3 className="course">Cursos Separados</h3>
+                                        <div className="info-course"> 
                                             <p>Inglês;</p>                                                
                                             <p>JavaScript;</p>                                                    
                                             <p>TypeScript;</p>
@@ -200,9 +200,9 @@ export function Courses() {
                                     date="12/2022"
                                     icon={ <EstacioIco /> }>
                                         <h3>E finalmente comecei minha faculdade e escolhi a área que eu amo. Tecnologia!</h3>
-                                        <h2 class="titleCourse">Estácio</h2> 
+                                        <h2 className="titleCourse">Estácio</h2> 
                                         <hr />                                         
-                                        <img class="logo-institute" alt='Estacio' src={ Estacio } />                                  
+                                        <img className="logo-institute" alt='Estacio' src={ Estacio } />                                  
                                 </VerticalTimelineElement>
 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -210,8 +210,8 @@ export function Courses() {
                                     date="12/2022 - 06/2024"
                                     icon={ <EstacioIco /> }>
                                         <h3>Na faculdade nesse bimestre estamos vendo as seguintes matérias:</h3>
-                                        <h3 class="course">Análise e Desenvolvimento de Sistemas</h3>
-                                        <div class="info-course">                                                        
+                                        <h3 className="course">Análise e Desenvolvimento de Sistemas</h3>
+                                        <div className="info-course">                                                        
                                             <p>Arquitetura de Computadores</p>
                                             <p>Desenv. Web em Html5, Css, Javascript e Php</p>
                                             <p>Introdução à Segurança da Informação</p>

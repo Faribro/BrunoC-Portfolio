@@ -40,17 +40,14 @@ export function Projects() {
                 <HeaderProject />
                     <section id='Project' className="projects-zone" data-aos="fade-up">
                         <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-8">
-                                    <div className="section-title text-center pb-25">
-                                        <h2 className="title-project">Projetos</h2>
-                                        <hr />
-                                    </div> 
-                                </div>
+                            <div className="section-title">
+                                <h2 className="title">Projetos</h2>
+                                <hr />
                             </div>
-                            <div className="row">
-                                <div className="container-projects w50 box2" data-aos="fade-right">
-                                    <div className="single-project text-center mt-30">
+
+                            <div className="info-page-projects">
+                                <div className="container-projects" data-aos="fade-right">
+                                    <div className="my-project">
                                         <div className="project-image">
                                             <h2>PlaceUP</h2>
                                             <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><img src={ Placeup } alt="Placeup" /></a>                                                                                                                                                                                                                                                          
@@ -58,72 +55,72 @@ export function Projects() {
                                         </div>
                                     </div>
                                 </div>  
-                                <div class="w50 box2" data-aos="fade-left"> 
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-left">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>Animal Space</h2>
                                             <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><img src={ Hotel } alt="hotel" /></a>                                                                                                                                                                                                                     
                                             <p>Um tema de projeto sortiado e feito no curso do Proa. Um hotel para animais.</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="w50 box2" data-aos="fade-right">
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-right">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>Governo de SP</h2>
                                             <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img src={ Governo } alt="governo" /></a>                                                                                                                                                                            
                                             <p>Um projeto feito no Proa em grupo, escolher um site e recriar o site do zero e o design. O site que escolhemos para recriar o site do Governo de SP, já que o design não agradava.</p>
                                         </div>                    
                                     </div>
                                 </div>
-                                <div class="w50 box2" data-aos="fade-left">
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-left">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>Água na Boca</h2>
                                             <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><img src={ Pizzaria } alt="Pizzaria" /></a>                                                                                                                                  
                                             <p>Uma landing page para uma pizzaria do meu bairro.</p>
                                         </div>
                                     </div>
                                 </div>    
-                                <div class="w50 box2" data-aos="fade-right">
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-right">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>Clone do Instagram</h2>
                                             <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><img src={ Instagram }  alt="Instagram" /></a>                                                                                        
                                             <p>Este foi o um desafio no curso do Proa a criar um clone do Instagram de Maio de 2022.</p>
                                         </div>
                                     </div> 
                                 </div>        
-                                <div class="w50 box2" data-aos="fade-left">
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-left">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>Pokedex</h2>
                                             <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><img src={ Pokedex } alt="Pokedex" /></a>
                                             <p>Esse é um projeto simples, onde eu criei uma pokedex com base no vídeo do Manual do Dev.</p>
                                         </div>
                                     </div>
                                 </div>   
-                                <div class="w50 box2" data-aos="fade-right">
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-right">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>To Do List</h2>
                                             <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><img src={ Todolist } alt="Todolist" /></a>                                            
                                             <p>Esse é um ToDoList simples que eu criei apenas para treinar.</p>
                                         </div>
                                     </div>
                                 </div> 
-                                <div class="w50 box2" data-aos="fade-left">
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-left">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>Blind Vision</h2>
                                             <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><img src={ Blind } alt="Blind" /></a>                                                                                      
                                             <p>Esse foi um desafio feito no Proa onde era apenas criar uma ideia e um site básico.</p>
                                         </div>
                                     </div>
                                 </div> 
-                                <div class="w50 box2" data-aos="fade-up">
-                                    <div class="single-project text-center mt-30">
-                                        <div class="project-image">
+                                <div className="container-projects" data-aos="fade-up">
+                                    <div className="my-project">
+                                        <div className="project-image">
                                             <h2>Caoselheiro</h2>
                                             <a href="https://ecoverse-caoselheiro.vercel.app/" rel="noreferrer" target="_blank"><img src={ Caoselheiro } alt="Blind" /></a>                                                                                      
                                             <p>Esse foi um desafio de um processo seletivo.</p>

@@ -34,14 +34,14 @@ export function Header() {
 	return (
 	<>
 		<header className={`navigation ${scroll < 10 ? "" : "sticky"}`}>  
-			<div class="toggleArea">
+			<div className="toggleArea">
 				<BsFillSunFill className='sun' />
 					<input type="checkbox" id="switch" class="toggle-control" />
 					<label onClick={context.toggleThemeMode} for="switch"></label>
 				<BsMoonFill className='moon' />
 			</div>  
 
-			<nav class="desktop">
+			<nav className="desktop">
 				<ul>
 					<li><Link activeClass="select" spy={true} smooth={true} to="Home"><NavLink to="">Inicio</NavLink></Link></li>
 					<li><Link activeClass="select" spy={true} smooth={true} to="About"><NavLink to="">Sobre</NavLink></Link></li>
@@ -53,37 +53,37 @@ export function Header() {
 				</ul>
 			</nav>
 				
-			<div class="mobile">
-				<nav class="navbar">
+			<div className="mobile">
+				<nav className="navbar">
 					<ul className={`nav-menu ${isActive ? "active" : "nav-menu"}`}>
-						<li class="nav-item">
+						<li className="nav-item">
 							<Link activeClass="select-mobile" smooth spy to="Home"><NavLink to="">Inicio</NavLink></Link>
 						</li>
-						<li class="nav-item">
+						<li className="nav-item">
 							<Link activeClass="select-mobile" smooth spy to="About"><NavLink to="">Sobre</NavLink></Link>
 						</li>					
-						<li class="nav-item">
+						<li className="nav-item">
 							<Link activeClass="select-mobile" smooth spy to="Skills"><NavLink to="/">Skills</NavLink></Link>
 						</li>
-						<li class="nav-item">
+						<li className="nav-item">
 							<Link activeClass="select-mobile" smooth spy to="Courses"><NavLink to="">Formação</NavLink></Link>
 						</li>					
-						<li class="nav-item">
+						<li className="nav-item">
 							<Link activeClass="select-mobile" smooth spy to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link>
 						</li>
-						<li class="nav-item">
+						<li className="nav-item">
 							<Link activeClass="select-mobile" smooth spy to="Service"><NavLink to="">Serviços</NavLink></Link>
 						</li>
-						<li class="nav-item">
+						<li className="nav-item">
 							<Link activeClass="select-mobile" smooth spy to="Contact"><NavLink to="">Contato</NavLink></Link>
 						</li>
 					</ul>
 				
 					<button onClick={handleClick}>
 						<div className={`hamburger ${isActive ? "active" : "hamburger"}`}>
-							<span class="bar"></span>
-							<span class="bar"></span>
-							<span class="bar"></span>
+							<span className="bar"></span>
+							<span className="bar"></span>
+							<span className="bar"></span>
 						</div>     
 					</button>                                       
 				</nav>

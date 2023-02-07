@@ -41,18 +41,18 @@ export function Skills() {
 
     return (
         <>
-           <section id='Skills' class="skills-zone pt-100 pb-0">            
-                <div class="section-title">
-                    <h2 class="title">Skills</h2>
+           <section id='Skills' className="skills-zone pt-100 pb-0">            
+                <div className="section-title">
+                    <h2 className="title">Skills</h2>
                     <hr />
                 </div>   
 
-                <div class="skills">
+                <div className="skills">
                     <div id="frontEnd" className='frontEnd'>                        
-                        <button className="buttonSkills"onClick={toggleVisibilityFront}>   
+                        <button className="buttonSkills" onClick={toggleVisibilityFront}>   
                             <div className={`hamburgerFront ${isActiveFront ? "active" : ""}`} onClick={toggleVisibilityFront}>                           					
-                                <span class="barSkills"></span>
-                                <span class="barSkills"></span>
+                                <span className="barSkills"></span>
+                                <span className="barSkills"></span>
                             </div>   
                             <h1>Front-End</h1>
                         </button>  
@@ -95,12 +95,12 @@ export function Skills() {
                     </div>
                 </div>                     
 
-                <div class="skills">
+                <div className="skills">
                     <div id="backEnd" className='backEnd'>
                         <button className="buttonSkills" onClick={toggleVisibilityBack}>   
                             <div className={`hamburgerBack ${isActiveBack ? "active" : ""}`} onClick={toggleVisibilityBack}>                           	                           					
-                                <span class="barSkills"></span>
-                                <span class="barSkills"></span>
+                                <span className="barSkills"></span>
+                                <span className="barSkills"></span>
                             </div>
                             <h1>Back-End</h1>
                         </button> 
@@ -139,12 +139,12 @@ export function Skills() {
                     </div>
                 </div> 
 
-                <div class="skills">
+                <div className="skills">
                     <div id="outros" className='outros'>
                     <button className="buttonSkills"onClick={toggleVisibilityO}>   
                             <div className={`hamburgerO ${isActiveO ? "active" : ""}`} onClick={toggleVisibilityO}>  
-                                <span class="barSkills"></span>
-                                <span class="barSkills"></span>
+                                <span className="barSkills"></span>
+                                <span className="barSkills"></span>
                             </div>                                
                             <h1>Designer, Animação, Desenho e Hardware</h1>	                                  
                         </button> 
