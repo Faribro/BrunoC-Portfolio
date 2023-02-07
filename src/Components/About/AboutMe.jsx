@@ -18,7 +18,7 @@ export function AboutMe() {
                             <p>Eu me chamo Bruno, tenho 20 anos e atualmente estou morando em Jandira-SP e estou em busca do meu primeiro emprego como desenvolvedor.</p>                                     <br />   
                             <p>Já finalizei o ensino médio. Fiz curso na Microlins e no Instituto PROA e faço cursos na área de TI na Danki Code e na Udemy, sou programador Full-Stack, mas estou focado no desenvolvimento Front-end e design, e estou fazendo faculdade de análise e desenvolvimento de sistema na Estácio.</p>                                    <br />    
                             <p>Tenho conhecimentos em programação web, de games e de aplicativos. Na área de design, sei fazer animações e editar vídeos, tenho conhecimento básico na área de banco de dados. </p>                                        <br />    
-                            <p>Sou bastante esforçado e focado, dedicado, criativo, objetivo. Gosto sempre de aprender coisas novas e ampliar meus conhecimentos, principalmente quando o assunto é tecnologia que eu amo. Bom esse foi um “pequeno” resumo sobre mim e meus conhecimentos, muito obrigado!</p>
+                            <p>Sou bastante esforçado e focado, dedicado, criativo, detalhista, e objetivo. Gosto sempre de aprender coisas novas e ampliar meus conhecimentos, principalmente quando o assunto é tecnologia que eu amo. Bom esse foi um “pequeno” resumo sobre mim e meus conhecimentos, muito obrigado!</p>
                         </aside>
                         
                         <aside className='information-about' data-aos="fade-up">
