@@ -4,7 +4,8 @@
   width: 100%;
   padding-top: 120px;
   background-color: var(--bg-color);
-  color: var(--body-color);
+  color: var(--body-color);  
+  z-index: 2;
 }
 
 .about-zone .container{

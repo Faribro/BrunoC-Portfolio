@@ -34,12 +34,12 @@ export function Header() {
 	return (
 	<>
 		<header className={`navigation ${scroll < 10 ? "" : "sticky"}`}>  
-			<div className="toggleArea">
+			<section className="toggleArea">
 				<BsFillSunFill className='sun' />
 					<input type="checkbox" id="switch" class="toggle-control" />
 					<label onClick={context.toggleThemeMode} for="switch"></label>
 				<BsMoonFill className='moon' />
-			</div>  
+			</section>  
 
 			<nav className="desktop">
 				<ul>
@@ -53,7 +53,7 @@ export function Header() {
 				</ul>
 			</nav>
 				
-			<div className="mobile">
+			<section className="mobile">
 				<nav className="navbar">
 					<ul className={`nav-menu ${isActive ? "active" : "nav-menu"}`}>
 						<li className="nav-item">
@@ -80,14 +80,14 @@ export function Header() {
 					</ul>
 				
 					<button onClick={handleClick}>
-						<div className={`hamburger ${isActive ? "active" : "hamburger"}`}>
+						<article className={`hamburger ${isActive ? "active" : "hamburger"}`}>
 							<span className="bar"></span>
 							<span className="bar"></span>
 							<span className="bar"></span>
-						</div>     
+						</article>     
 					</button>                                       
 				</nav>
-			</div>	
+			</section>	
 		</header>
 	</>
 	);

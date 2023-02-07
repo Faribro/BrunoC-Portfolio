@@ -1,7 +1,8 @@
 @import url(../../../App.scss);
 
 .curriculum {
-  height: 280px;
+  height: auto;
+  padding-bottom: 70px;
   position: relative;
   z-index: 1; 
   background-image: url("../Images/programming.jpg");
@@ -30,5 +31,6 @@
 
 .curriculum-content .main-btn{
   color: var(--blueCyan-color);
-  border-color: var(--blueCyan-color);
+  border-color: var(--blueCyan-color);  
+  margin-bottom: 20px;
 }

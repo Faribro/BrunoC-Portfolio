@@ -43,74 +43,74 @@ export function Home() {
         <>
             {loading?      
             <Loading />:
-                <div>
+                <section>
                     <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
                     <div className='img-background'></div> 
                       
                     <Header /> 
                     <MouseParallaxContainer>  
-                        <div id='Home' className="cover-content">                                              
+                        <main id='Home' className="cover-content">                                              
                             <div className='color-background'/>
 
-                            <div className='background-cover'>
+                            <figure className='background-cover'>
                                 <img src={ backgroundCover }  alt="back"/>
-                            </div>  
+                            </figure>  
 
-                            <div className='parallax-cover'>
+                            <section className='parallax-cover'>
                                 <MouseParallaxChild factorX={0.1} factorY={0.1}>
-                                    <div class="cover-shape shape-one layer" data-depth="0.10">                                            
+                                    <figure class="cover-shape shape-one layer" data-depth="0.10">                                            
                                         <img src={ shape1 }  alt="Shape" />
-                                    </div>        
-                                    <div class="cover-shape shape-two layer" data-depth="0.10">                                            
+                                    </figure>        
+                                    <figure class="cover-shape shape-two layer" data-depth="0.10">                                            
                                         <img src={ shape2 }  alt="Shape"/>
-                                    </div>  
-                                    <div class="cover-shape shape-three layer" data-depth="0.10">                                            
+                                    </figure>  
+                                    <figure class="cover-shape shape-three layer" data-depth="0.10">                                            
                                         <img src={ shape3 }  alt="Shape"/>
-                                    </div>  
-                                    <div class="cover-shape shape-four layer" data-depth="0.10">                                            
+                                    </figure>  
+                                    <figure class="cover-shape shape-four layer" data-depth="0.10">                                            
                                         <img src={ shape4 }  alt="Shape"/>
-                                    </div>  
-                                    <div class="cover-shape shape-five layer" data-depth="0.10">                                            
+                                    </figure>  
+                                    <figure class="cover-shape shape-five layer" data-depth="0.10">                                            
                                         <img src={ shape5 }  alt="Shape"/>
-                                    </div>                          
+                                    </figure>                          
                                 </MouseParallaxChild>
-                            </div>  
+                            </section>  
 
-                            <div className="right-container">           
-                                <div className="info-cover">
-                                    <div className="cover-container-right">
+                            <section className="right-container">           
+                                <article className="info-cover">
+                                    <aside className="cover-container-right">
                                         <h4 className="sub-title-cover">Olá, Eu sou</h4>
                                         <h1 className="title-cover">Bruno Costa C.</h1>
                                         <div className="professions-cover">           
                                             <Type />
                                         </div>                                            
                                         <a className="cover-btn" without rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1yN62QAxfL2RHPrZvQx9l3FpdnuzN2ZuK/view?usp=share_link">Baixar CV</a>
-                                    </div>           
-                                </div>   
-                                <div className="profile-image">
+                                    </aside>           
+                                </article>   
+                                <figure className="profile-image">
                                     <img src={perfil} alt="perfil" />
-                                </div> 
-                            </div>    
+                                </figure> 
+                            </section>    
 
-                            <div className="cover-social">
-                                <div className="info-social-cover">
-                                    <div className="cover-social-container">
+                            <section className="cover-social">
+                                <article className="info-social-cover">
+                                    <aside className="cover-social-container">
                                         <div className="cover-social-icon">
                                             <ul>
                                                 <li><a target="_blank" without rel="noreferrer" href="https://github.com/ibrunoc/"><BsGithub className='github-cover'/></a></li>
                                                 <li><a target="_blank" without rel="noreferrer" href="https://www.linkedin.com/in/brunocostac/"><BsLinkedin className='linkedin-cover' /></a></li>
                                             </ul> 
                                         </div>          
-                                    </div>                           
-                                </div> 
-                            </div>  
+                                    </aside>                           
+                                </article> 
+                            </section>  
 
-                            <div className="scroll-down">
+                            <section className="scroll-down">
                                 <a href="#About">
                                     <MdArrowDownward className='arrow-down' />    
                                 </a>
-                            </div>      
-                        </div>      
+                            </section>      
+                        </main>      
                     </MouseParallaxContainer>
                     <AboutMe />  
                     <Skills />  
@@ -120,7 +120,7 @@ export function Home() {
                     <Curriculum />   
                     <Footer />     
                     <Scroll />
-                </div>
+                </section>
             }         
         </>
     );

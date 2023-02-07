@@ -47,14 +47,14 @@ export function Error() {
                     <FaSass className="erro-shape erro-icon-eleven" />
                 </MouseParallaxChild>
 
-                <div className="container-erro"> 
+                <article className="container-erro"> 
                   <h2 className="text-404">404</h2>   
                     <div className='text-erro'>
                         <p>Ué? Parece que você se perdeu...</p>
                         <p>Volte para a página inicial!</p>
                         <Link to="/"><button>Inicio</button></Link>
                     </div>
-                </div>
+                </article>
               </section>	           
             </MouseParallaxContainer>   
         </div>         

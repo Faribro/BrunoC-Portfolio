@@ -12,6 +12,12 @@ import DankiCode from './Images/DankiCode-Logo.jpg';
 import Udemy from './Images/Udemy-Logo.jpg';
 import Microlins from './Images/Microlins-Logo.jpg';
 
+import EstacioI from './Images/Estacio-ico.png';
+import ProaI from './Images/Proa-ico.png';
+import DankiCodeI from './Images/DankiCode-ico.png';
+import UdemyI from './Images/Udemy-ico.png';
+import MicrolinsI from './Images/Microlins-ico.png';
+
 import { IoIosSchool } from 'react-icons/io';
 import { RiComputerFill } from 'react-icons/ri';
 
@@ -30,18 +36,13 @@ export function Courses() {
       setTimeout(() => {
         setIsLoading(false);
       }, 800);
-    }, [])
-
+    }, []);
     
-    const MicrolinsIco = () => ( <img className="icon-course" alt="Microlins" src={Microlins} /> );
-
-    const DankiIco = () => ( <img className='icon-course' alt='Danki Code' src={ DankiCode } /> );
-
-    const ProaIco = () => ( <img className="icon-course" alt="Proa" src={Proa} /> );
-
-    const UdemyIco = () => ( <img className='icon-course' alt='Udemy' src={ Udemy } /> );
-
-    const EstacioIco = () => ( <img className="icon-course" alt="Estácio" src={Estacio} /> );
+    const MicrolinsIco = () => ( <img className="icon-course" alt="Microlins" src={MicrolinsI} /> );
+    const DankiIco = () => ( <img className='icon-course' alt='Danki Code' src={ DankiCodeI } /> );
+    const ProaIco = () => ( <img className="icon-course" alt="Proa" src={ProaI} /> );
+    const UdemyIco = () => ( <img className='icon-course' alt='Udemy' src={ UdemyI } /> );
+    const EstacioIco = () => ( <img className="icon-course" alt="Estácio" src={EstacioI} /> );
 
     return (
         <>
@@ -50,12 +51,12 @@ export function Courses() {
                 <div>
                     <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
                     <HeaderCourse /> 
-                    <section id='Courses' className="courses-zone">
-                        <div className="container">
-                            <div className="title">
+                    <main id='Courses' className="courses-zone">
+                        <section className="container">
+                            <article className="title">
                                 <h2>Formação Acadêmica</h2>            
                                 <hr />
-                            </div>
+                            </article>
                             
                             <VerticalTimeline lineColor='var(--subtitle-color)'>
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -221,8 +222,8 @@ export function Courses() {
                                         <button className='main-btn'><a href='https://estacio.br/cursos/graduacao/analise-e-desenvolvimento-de-sistemas' rel="noreferrer" target="_blank">SITE</a></button>
                                 </VerticalTimelineElement>
                             </VerticalTimeline>               
-                        </div>   
-                    </section>
+                        </section>   
+                    </main>
                     <Footer />     
                     <Scroll />
                 </div>

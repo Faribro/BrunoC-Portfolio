@@ -41,23 +41,23 @@ export function Skills() {
 
     return (
         <>
-           <section id='Skills' className="skills-zone pt-100 pb-0">            
-                <div className="section-title">
+           <main id='Skills' className="skills-zone">            
+                <section className="section-title">
                     <h2 className="title">Skills</h2>
                     <hr />
-                </div>   
+                </section>   
 
-                <div className="skills">
-                    <div id="frontEnd" className='frontEnd'>                        
+                <section className="skills">
+                    <article id="frontEnd" className='frontEnd'>                        
                         <button className="buttonSkills" onClick={toggleVisibilityFront}>   
-                            <div className={`hamburgerFront ${isActiveFront ? "active" : ""}`} onClick={toggleVisibilityFront}>                           					
+                            <aside className={`hamburgerFront ${isActiveFront ? "active" : ""}`} onClick={toggleVisibilityFront}>                           					
                                 <span className="barSkills"></span>
                                 <span className="barSkills"></span>
-                            </div>   
+                            </aside>   
                             <h1>Front-End</h1>
                         </button>  
                         {isVisibleFront &&
-                            <div className='circular-container'>
+                            <aside className='circular-container'>
                                     <div className='circular'>
                                         <CircularProgressbar value={percentage} text={`${percentage}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                         <h1>HTML</h1>
@@ -90,22 +90,22 @@ export function Skills() {
                                         <CircularProgressbar value={percentage5} text={`${percentage5}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                         <h1>BootStrap</h1>
                                     </div>
-                            </div>
+                            </aside>
                         }      
-                    </div>
-                </div>                     
+                    </article>
+                </section>                     
 
-                <div className="skills">
-                    <div id="backEnd" className='backEnd'>
+                <section className="skills">
+                    <article id="backEnd" className='backEnd'>
                         <button className="buttonSkills" onClick={toggleVisibilityBack}>   
-                            <div className={`hamburgerBack ${isActiveBack ? "active" : ""}`} onClick={toggleVisibilityBack}>                           	                           					
+                            <aside className={`hamburgerBack ${isActiveBack ? "active" : ""}`} onClick={toggleVisibilityBack}>                           	                           					
                                 <span className="barSkills"></span>
                                 <span className="barSkills"></span>
-                            </div>
+                            </aside>
                             <h1>Back-End</h1>
                         </button> 
                         {isVisibleBack &&
-                            <div className='circular-container'>
+                            <aside className='circular-container'>
                                 <div className='circular'>
                                     <CircularProgressbar value={percentage3} text={`${percentage3}%`} counterClockwise styles={buildStyles({ textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                     <h1>PHP</h1>
@@ -134,22 +134,22 @@ export function Skills() {
                                     <CircularProgressbar value={percentage6} text={`${percentage6}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                     <h1>C#</h1>
                                 </div>                          
-                            </div> 
+                            </aside> 
                         }          
-                    </div>
-                </div> 
+                    </article>
+                </section> 
 
-                <div className="skills">
-                    <div id="outros" className='outros'>
+                <section className="skills">
+                    <article id="outros" className='outros'>
                     <button className="buttonSkills"onClick={toggleVisibilityO}>   
-                            <div className={`hamburgerO ${isActiveO ? "active" : ""}`} onClick={toggleVisibilityO}>  
+                            <aside className={`hamburgerO ${isActiveO ? "active" : ""}`} onClick={toggleVisibilityO}>  
                                 <span className="barSkills"></span>
                                 <span className="barSkills"></span>
-                            </div>                                
+                            </aside>                                
                             <h1>Designer, Animação, Desenho e Hardware</h1>	                                  
                         </button> 
                         {isVisibleO &&
-                            <div className='circular-container'>
+                            <aside className='circular-container'>
                                 <div className='circular'>
                                     <CircularProgressbar value={percentage2} text={`${percentage2}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                     <h1>PhotoShop</h1>
@@ -178,11 +178,11 @@ export function Skills() {
                                     <CircularProgressbar value={percentage} text={`${percentage}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                     <h1>Montagem de PC</h1>
                                 </div>
-                            </div>
+                            </aside>
                         }      
-                    </div>
-                </div>
-            </section>
+                    </article>
+                </section>
+            </main>
         </>
     );
 }  
