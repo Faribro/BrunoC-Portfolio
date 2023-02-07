@@ -37,12 +37,12 @@ header nav{
 .desktop ul{  
 	list-style-type: none;
     display: flex;
+    color: var(--body-color);
 }
 
 .desktop li {
     margin-left: 30px;    
     margin-top: -5px;
-    color: var(--body-color);
 }
 
 .desktop li a{

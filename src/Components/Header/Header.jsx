@@ -28,12 +28,26 @@ export function Header() {
 	}, []);
 	
 	const handleScroll = () => {
-	setScroll(window.pageYOffset);
+		setScroll(window.pageYOffset);
 	};
+
+	const [scrollColor, setScrollColor] = useState(0);
+
+	const [backgroundColorScroll, setBackgroundColor] = useState("transparent");
+
+	const [ColorScroll, setColor] = useState("white");
+
+	useEffect(() => {
+		window.addEventListener("scroll", () => {
+			setScrollColor(window.pageYOffset);
+			setBackgroundColor(scrollColor > 900 ? "var(--bg-color)" : "transparent");		
+			setColor(scrollColor > 900 ? "var(--body-color)" : "white");
+		});
+	}, [scrollColor]);
 
 	return (
 	<>
-		<header className={`navigation ${scroll < 10 ? "" : "sticky"}`}>  
+		<header style={{ background: backgroundColorScroll }} className={`navigation ${scroll < 10 ? "" : "sticky"}`}>  
 			<section className="toggleArea">
 				<BsFillSunFill className='sun' />
 					<input type="checkbox" id="switch" class="toggle-control" />
@@ -42,14 +56,14 @@ export function Header() {
 			</section>  
 
 			<nav className="desktop">
-				<ul>
-					<li><Link activeClass="select" spy={true} smooth={true} to="Home"><NavLink to="">Inicio</NavLink></Link></li>
-					<li><Link activeClass="select" spy={true} smooth={true} to="About"><NavLink to="">Sobre</NavLink></Link></li>
-					<li><Link activeClass="select" spy={true} smooth={true} to="Skills"><NavLink to="">Skills</NavLink></Link></li>
-					<li><Link activeClass="select" spy={true} smooth={true} to="Courses"><NavLink to="">Formação</NavLink></Link></li>
-					<li><Link activeClass="select" spy={true} smooth={true} to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link></li>					
-					<li><Link activeClass="select" spy={true} smooth={true} to="Service"><NavLink to="">Serviços</NavLink></Link></li>
-					<li><Link activeClass="select" spy={true} smooth={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
+				<ul style={{ color: ColorScroll }}>
+					<li><Link activeClass="select" spy={true} to="Home"><NavLink to="">Inicio</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} to="About"><NavLink to="">Sobre</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} to="Skills"><NavLink to="">Skills</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} to="Courses"><NavLink to="">Formação</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link></li>					
+					<li><Link activeClass="select" spy={true} to="Service"><NavLink to="">Serviços</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
 				</ul>
 			</nav>
 				
@@ -57,25 +71,25 @@ export function Header() {
 				<nav className="navbar">
 					<ul className={`nav-menu ${isActive ? "active" : "nav-menu"}`}>
 						<li className="nav-item">
-							<Link activeClass="select-mobile" smooth spy to="Home"><NavLink to="">Inicio</NavLink></Link>
+							<Link activeClass="select-mobile" spy={true} to="Home"><NavLink to="">Inicio</NavLink></Link>
 						</li>
 						<li className="nav-item">
-							<Link activeClass="select-mobile" smooth spy to="About"><NavLink to="">Sobre</NavLink></Link>
+							<Link activeClass="select-mobile" spy={true} to="About"><NavLink to="">Sobre</NavLink></Link>
 						</li>					
 						<li className="nav-item">
-							<Link activeClass="select-mobile" smooth spy to="Skills"><NavLink to="/">Skills</NavLink></Link>
+							<Link activeClass="select-mobile" spy={true} to="Skills"><NavLink to="/">Skills</NavLink></Link>
 						</li>
 						<li className="nav-item">
-							<Link activeClass="select-mobile" smooth spy to="Courses"><NavLink to="">Formação</NavLink></Link>
+							<Link activeClass="select-mobile" spy={true} to="Courses"><NavLink to="">Formação</NavLink></Link>
 						</li>					
 						<li className="nav-item">
-							<Link activeClass="select-mobile" smooth spy to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link>
+							<Link activeClass="select-mobile" spy={true} to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link>
 						</li>
 						<li className="nav-item">
-							<Link activeClass="select-mobile" smooth spy to="Service"><NavLink to="">Serviços</NavLink></Link>
+							<Link activeClass="select-mobile" spy={true} to="Service"><NavLink to="">Serviços</NavLink></Link>
 						</li>
 						<li className="nav-item">
-							<Link activeClass="select-mobile" smooth spy to="Contact"><NavLink to="">Contato</NavLink></Link>
+							<Link activeClass="select-mobile" spy={true} to="Contact"><NavLink to="">Contato</NavLink></Link>
 						</li>
 					</ul>
 				

@@ -4,13 +4,15 @@ import { Home } from './Pages/Home/Home';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 
-export function App() {
+function App() {
   return (
     <> 
       <Home/>
     </>
   );
 }
+
+export default App;
 
 AOS.init({
   disable: false, 

@@ -3,14 +3,14 @@
 .projects-Home{
   background-color: var(--bg-color);
   color: var(--body-color);
-  padding-top: 160px;
   width: 100%;
   padding-bottom: -120px;
   margin: auto;
 } 
 
 .projects-Home .container{
-  max-width: 1300px; 
+  max-width: 1300px;   
+  padding-top: 160px;
   display: block;
   margin: auto;
 }

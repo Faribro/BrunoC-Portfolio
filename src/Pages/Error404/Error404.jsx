@@ -14,7 +14,7 @@ import 'aos/dist/aos.css';
 import AnimatedCursor from "react-animated-cursor";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
-export function Error() {
+function Error() {
   
   const [loading, setIsLoading] = useState(false);
 
@@ -25,43 +25,45 @@ export function Error() {
       }, 800);
     }, [])
 
-  return (
-    <>
-      {loading?      
-        <Loading />:
-        <div>
-            <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
-            <MouseParallaxContainer>
-              <section className="error-404">           
-                <MouseParallaxChild factorX={0.04} factorY={0.1}>
-                    <AiFillHtml5 className="erro-shape erro-icon-one" />
-                    <FaCss3Alt className="erro-shape erro-icon-two" />
-                    <SiJavascript className="erro-shape erro-icon-three" />
-                    <FaPython className="erro-shape erro-icon-four" />
-                    <FaJava className="erro-shape erro-icon-five" />
-                    <SiTypescript className="erro-shape erro-icon-six" />
-                    <FaBootstrap className="erro-shape erro-icon-seven" />
-                    <FaReact className="erro-shape erro-icon-eight" />
-                    <SiPhp className="erro-shape erro-icon-nine" />
-                    <SiAdobephotoshop className="erro-shape erro-icon-ten" />
-                    <FaSass className="erro-shape erro-icon-eleven" />
-                </MouseParallaxChild>
+    return (
+      <>
+        {loading?      
+          <Loading />:
+          <div>
+              <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
+              <MouseParallaxContainer>
+                <section className="error-404">           
+                  <MouseParallaxChild factorX={0.04} factorY={0.1}>
+                      <AiFillHtml5 className="erro-shape erro-icon-one" />
+                      <FaCss3Alt className="erro-shape erro-icon-two" />
+                      <SiJavascript className="erro-shape erro-icon-three" />
+                      <FaPython className="erro-shape erro-icon-four" />
+                      <FaJava className="erro-shape erro-icon-five" />
+                      <SiTypescript className="erro-shape erro-icon-six" />
+                      <FaBootstrap className="erro-shape erro-icon-seven" />
+                      <FaReact className="erro-shape erro-icon-eight" />
+                      <SiPhp className="erro-shape erro-icon-nine" />
+                      <SiAdobephotoshop className="erro-shape erro-icon-ten" />
+                      <FaSass className="erro-shape erro-icon-eleven" />
+                  </MouseParallaxChild>
 
-                <article className="container-erro"> 
-                  <h2 className="text-404">404</h2>   
-                    <div className='text-erro'>
-                        <p>Ué? Parece que você se perdeu...</p>
-                        <p>Volte para a página inicial!</p>
-                        <Link to="/"><button>Inicio</button></Link>
-                    </div>
-                </article>
-              </section>	           
-            </MouseParallaxContainer>   
-        </div>         
-      }         
-    </>	    
-  );
+                  <article className="container-erro"> 
+                    <h2 className="text-404">404</h2>   
+                      <div className='text-erro'>
+                          <p>Ué? Parece que você se perdeu...</p>
+                          <p>Volte para a página inicial!</p>
+                          <Link to="/"><button>Inicio</button></Link>
+                      </div>
+                  </article>
+                </section>	           
+              </MouseParallaxContainer>   
+          </div>         
+        }         
+      </>	    
+    );
 }
+
+export default Error;
 
 AOS.init({
   disable: false, 

@@ -43,9 +43,9 @@ export function HeaderCourse() {
 
 				<nav className="desktop">
 					<ul>
-						<li><Link activeClass="select" spy={true} smooth={true} to="Home"><NavLink to="/">Inicio</NavLink></Link></li>
-						<li><Link activeClass="select" spy={true} smooth={true} to="Courses"><NavLink to="">Formação</NavLink></Link></li>
-						<li><Link activeClass="select" spy={true} smooth={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
+						<li><Link activeClass="select" spy={true} to="Home"><NavLink to="/">Inicio</NavLink></Link></li>
+						<li><Link activeClass="select" spy={true} to="Courses"><NavLink to="">Formação</NavLink></Link></li>
+						<li><Link activeClass="select" spy={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
 					</ul>
 				</nav>
 					
@@ -53,13 +53,13 @@ export function HeaderCourse() {
 					<nav className="navbar">
 						<ul className={`nav-menu ${isActive ? "active" : "nav-menu"}`}>
 							<li className="nav-item">
-								<Link activeClass="select-mobile" smooth spy to="Home"><NavLink to="/">Inicio</NavLink></Link>
+								<Link activeClass="select-mobile" spy={true} to="Home"><NavLink to="/">Inicio</NavLink></Link>
 							</li>
 							<li className="nav-item">
-								<Link activeClass="select-mobile" smooth spy to="Courses"><NavLink to="">Formação</NavLink></Link>
+								<Link activeClass="select-mobile" spy={true} to="Courses"><NavLink to="">Formação</NavLink></Link>
 							</li>					
 							<li className="nav-item">
-								<Link activeClass="select-mobile" smooth spy to="Contact"><NavLink to="">Contato</NavLink></Link>
+								<Link activeClass="select-mobile" spy={true} to="Contact"><NavLink to="">Contato</NavLink></Link>
 							</li>
 						</ul>
 					

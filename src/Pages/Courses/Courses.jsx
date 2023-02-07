@@ -27,7 +27,7 @@ import AnimatedCursor from "react-animated-cursor";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-export function Courses() {
+function Courses() {
     
     const [loading, setIsLoading] = useState(false);
 
@@ -250,3 +250,5 @@ AOS.init({
     mirror: false, 
     anchorPlacement: 'top-bottom', 
 });
+
+export default Courses;
