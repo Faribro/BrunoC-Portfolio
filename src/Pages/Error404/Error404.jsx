@@ -1,12 +1,13 @@
-import './scss/Error.modules.scss';
+import './Style/Error.modules.scss';
+import './Style/Shape.modules.scss';
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import Loading from '../../Components/Loading/Loading';
 
 import { AiFillHtml5  } from "react-icons/ai"; 
-import { FaCss3Alt, FaReact, FaSass  } from "react-icons/fa"; 
-import { SiPhp, SiJavascript  } from "react-icons/si"; 
+import { FaCss3Alt, FaReact, FaSass, FaJava, FaPython, FaBootstrap  } from "react-icons/fa"; 
+import { SiPhp, SiJavascript, SiTypescript, SiAdobephotoshop  } from "react-icons/si"; 
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -29,45 +30,30 @@ export function Error() {
       {loading?      
         <Loading />:
         <div>
-            <AnimatedCursor
-              innerSize={8}
-              outerSize={35}
-              innerScale={1}
-              outerScale={1.7}
-              outerAlpha={0}
-              hasBlendMode={true}
-              outerStyle={{
-                  border: '3px solid var(--subtitle2-color)'
-              }}
-              innerStyle={{
-                  backgroundColor: 'var(--subtitle2-color)'
-            }} />
+            <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
             <MouseParallaxContainer>
-              <section class="wrapper">            
-                <MouseParallaxChild factorX={0.1} factorY={0.1}>
-                    <AiFillHtml5 class="erro-shape erroIcon-one" data-depth="0.10" />
-                    <FaCss3Alt class="erro-shape erroIcon-two" data-depth="0.30" />
-                    <SiJavascript class="erro-shape erroIcon-three" data-depth="0.40" />
-                    <FaCss3Alt class="erro-shape erroIcon-four" data-depth="0.60" />
-                    <AiFillHtml5 class="erro-shape erroIcon-five" data-depth="0.20" />
-                    <FaReact class="erro-shape erroIcon-six" data-depth="0.15" />
-                    <SiPhp class="erro-shape erroIcon-seven" data-depth="0.50" />
-                    <FaReact class="erro-shape erroIcon-eight" data-depth="0.40" />
-                    <SiPhp class="erro-shape erroIcon-nine" data-depth="0.20" />
-                    <SiJavascript class="erro-shape erroIcon-ten" data-depth="0.30" />
-                    <FaSass class="erro-shape erroIcon-onze" data-depth="0.50" />
+              <section class="error-404">           
+                <MouseParallaxChild factorX={0.04} factorY={0.1}>
+                    <AiFillHtml5 class="erro-shape erro-icon-one" />
+                    <FaCss3Alt class="erro-shape erro-icon-two" />
+                    <SiJavascript class="erro-shape erro-icon-three" />
+                    <FaPython class="erro-shape erro-icon-four" />
+                    <FaJava class="erro-shape erro-icon-five" />
+                    <SiTypescript class="erro-shape erro-icon-six" />
+                    <FaBootstrap class="erro-shape erro-icon-seven" />
+                    <FaReact class="erro-shape erro-icon-eight" />
+                    <SiPhp class="erro-shape erro-icon-nine" />
+                    <SiAdobephotoshop class="erro-shape erro-icon-ten" />
+                    <FaSass class="erro-shape erro-icon-eleven" />
                 </MouseParallaxChild>
-                <div class="container"> 
-                  <p class="p404">404</p>   
-                  <div class="text">
-                    <article>
+
+                <div class="container-erro"> 
+                  <h2 class="text-404">404</h2>   
+                    <div className='text-erro'>
                         <p>Ué? Parece que você se perdeu...</p>
                         <p>Volte para a página inicial!</p>
-                        <Link to="/">
-                          <button>Inicio</button>
-                        </Link>
-                    </article>
-                  </div>
+                        <Link to="/"><button>Inicio</button></Link>
+                    </div>
                 </div>
               </section>	           
             </MouseParallaxContainer>   

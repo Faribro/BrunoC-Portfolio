@@ -1,7 +1,6 @@
-import './scss/Header.modules.scss';
-import React, { useContext } from 'react';
+import './Style/Header.modules.scss';
+import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
-import $ from "jquery";
 
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs"; 
 
@@ -10,86 +9,86 @@ import { ThemeContext } from '../../Common/Context/ThemeContext';
 
 export function Header() {
 
-	const context = useContext(ThemeContext);
+	const context = useContext(ThemeContext);		
+	
+	const [isActive, setIsActive] = useState(false);
+	  
+	const handleClick = () => {
+		setIsActive(!isActive);
+	};
 
-	function menuHamburger() {
-        const hamburger = document.querySelector(".hamburger");
-        const navMenu = document.querySelector(".nav-menu");
-    
-        hamburger.classList.toggle("active");
-        navMenu.classList.toggle("active");
-    }
+	const [scroll, setScroll] = useState(0);
 
-	$(window).on('scroll', function(event) {    
-        var scroll = $(window).scrollTop();
-        if (scroll < 10) {
-            $(".navigation").removeClass("sticky");
-        } else{
-            $(".navigation").addClass("sticky");
-        }
-    });
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll);
+	
+		return () => {
+		  window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+	
+	const handleScroll = () => {
+	setScroll(window.pageYOffset);
+	};
 
-  return (
-    <>
-		<header className='navigation'>  
+	return (
+	<>
+		<header className={`navigation ${scroll < 10 ? "" : "sticky"}`}>  
 			<div class="toggleArea">
 				<BsFillSunFill className='sun' />
 					<input type="checkbox" id="switch" class="toggle-control" />
 					<label onClick={context.toggleThemeMode} for="switch"></label>
 				<BsMoonFill className='moon' />
-            </div>  
+			</div>  
 
 			<nav class="desktop">
 				<ul>
-					<li><Link activeClass="Select" spy={true} smooth={true} to="Home"><NavLink to="">Inicio</NavLink></Link></li>
-					<li><Link activeClass="Select" spy={true} smooth={true} to="About"><NavLink to="">Sobre</NavLink></Link></li>
-					<li><Link activeClass="Select" spy={true} smooth={true} to="Skills"><NavLink to="">Skills</NavLink></Link></li>
-					<li><Link activeClass="Select" spy={true} smooth={true} to="Courses"><NavLink to="">Formação</NavLink></Link></li>
-					<li><Link activeClass="Select" spy={true} smooth={true} to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link></li>					
-					<li><Link activeClass="Select" spy={true} smooth={true} to="Service"><NavLink to="">Serviços</NavLink></Link></li>
-					<li><Link activeClass="Select" spy={true} smooth={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} smooth={true} to="Home"><NavLink to="">Inicio</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} smooth={true} to="About"><NavLink to="">Sobre</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} smooth={true} to="Skills"><NavLink to="">Skills</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} smooth={true} to="Courses"><NavLink to="">Formação</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} smooth={true} to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link></li>					
+					<li><Link activeClass="select" spy={true} smooth={true} to="Service"><NavLink to="">Serviços</NavLink></Link></li>
+					<li><Link activeClass="select" spy={true} smooth={true} to="Contact"><NavLink to="">Contato</NavLink></Link></li>
 				</ul>
 			</nav>
-			 
+				
 			<div class="mobile">
 				<nav class="navbar">
-					<ul class="nav-menu">
+					<ul className={`nav-menu ${isActive ? "active" : "nav-menu"}`}>
 						<li class="nav-item">
-							<Link activeClass="SelectMobile" smooth spy to="Home"><NavLink to="">Inicio</NavLink></Link>
+							<Link activeClass="select-mobile" smooth spy to="Home"><NavLink to="">Inicio</NavLink></Link>
 						</li>
 						<li class="nav-item">
-							<Link activeClass="SelectMobile" smooth spy to="About"><NavLink to="">Sobre</NavLink></Link>
-						</li>
-					
+							<Link activeClass="select-mobile" smooth spy to="About"><NavLink to="">Sobre</NavLink></Link>
+						</li>					
 						<li class="nav-item">
-							<Link activeClass="SelectMobile" smooth spy to="Skills"><NavLink to="/">Skills</NavLink></Link>
-						</li>
-
-						<li class="nav-item">
-							<Link activeClass="SelectMobile" smooth spy to="Courses"><NavLink to="">Formação</NavLink></Link>
-						</li>
-					
-						<li class="nav-item">
-							<Link activeClass="SelectMobile" smooth spy to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link>
+							<Link activeClass="select-mobile" smooth spy to="Skills"><NavLink to="/">Skills</NavLink></Link>
 						</li>
 						<li class="nav-item">
-							<Link activeClass="SelectMobile" smooth spy to="Service"><NavLink to="">Serviços</NavLink></Link>
+							<Link activeClass="select-mobile" smooth spy to="Courses"><NavLink to="">Formação</NavLink></Link>
+						</li>					
+						<li class="nav-item">
+							<Link activeClass="select-mobile" smooth spy to="Project"><NavLink to="">&lt;Projetos /&gt;</NavLink></Link>
 						</li>
 						<li class="nav-item">
-							<Link activeClass="SelectMobile" smooth spy to="Contact"><NavLink to="">Contato</NavLink></Link>
+							<Link activeClass="select-mobile" smooth spy to="Service"><NavLink to="">Serviços</NavLink></Link>
+						</li>
+						<li class="nav-item">
+							<Link activeClass="select-mobile" smooth spy to="Contact"><NavLink to="">Contato</NavLink></Link>
 						</li>
 					</ul>
 				
-						<button onClick={menuHamburger}>
-							<div class="hamburger" id="menuHamburger">
-								<span class="bar"></span>
-								<span class="bar"></span>
-								<span class="bar"></span>
-							</div>     
-						</button>                                       
+					<button onClick={handleClick}>
+						<div className={`hamburger ${isActive ? "active" : "hamburger"}`}>
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>     
+					</button>                                       
 				</nav>
 			</div>	
 		</header>
-    </>
-  );
+	</>
+	);
 }

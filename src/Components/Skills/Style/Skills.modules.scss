@@ -16,9 +16,7 @@
     margin: 50px auto; 
   }
 
-  .frontEnd, .backEnd, .outros{
-    height: auto;
-  }
+  .frontEnd, .backEnd, .outros{ height: auto; }
 
   .outros{ padding-bottom: 0px; }
 
@@ -28,22 +26,7 @@
     color: var(--bg-color);
   }
 
-  .CircularContainer, .CircularContainer2, .CircularContainer3 {
-    width: 70%;
-    background-color: var(--body2-color);
-    border-radius: 20px;
-    max-width: 1500px;
-    padding-bottom: 50px;
-    margin: 10px auto 50px auto;
-    display: flex;    
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;  
-  }
-
-  .outros .CircularContainer{ padding-bottom: 80px; }
-
-  .frontTeste{
+  .buttonSkills{
     position: relative;
     background-color: var(--subtitle-color);
     width: 70%;
@@ -54,14 +37,14 @@
     text-align: center;
   }
   
-  .frontTeste:before {
+  .buttonSkills:before {
     content: '';
     display: inline-block;
     vertical-align: middle;
     margin-right: -0.25em; /* Adjusts for spacing */
   }
 
-  .frontTeste h1{    
+  .buttonSkills h1{    
     width: 90%;
     color: var(--bg-color);   
     text-align: left;
@@ -70,7 +53,7 @@
     font-weight: 600;
   }
 
-  .hamburgerr, .hamburgerr2, .hamburgerr3 {
+  .hamburgerFront, .hamburgerBack, .hamburgerO {
     width: 10%;
     height: 100% !important;   
     position: absolute;
@@ -83,9 +66,9 @@
     color: var(--body-color);
   }
 
-  .hamburgerr3 { top: 95%; }
+  .hamburgerO{ top: 95%; }
   
-  .barr, .barr2, .barr3{  
+  .barSkills{  
     display: block;
     width: 20px;
     height: 5px;
@@ -95,22 +78,37 @@
     background-color: var(--bg-color);
   }
 
-  .hamburgerr .barr:nth-child(1),  
-  .hamburgerr2 .barr2:nth-child(1),
-  .hamburgerr3 .barr3:nth-child(1){ transform: translateX(-11px) rotate(45deg); }
+  .hamburgerFront .barSkills:nth-child(1),  
+  .hamburgerBack .barSkills:nth-child(1),
+  .hamburgerO .barSkills:nth-child(1){ transform: translateX(-11px) rotate(45deg); }
 
-  .hamburgerr .barr:nth-child(2),
-  .hamburgerr2 .barr2:nth-child(2),  
-  .hamburgerr3 .barr3:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
+  .hamburgerFront .barSkills:nth-child(2),
+  .hamburgerBack .barSkills:nth-child(2),  
+  .hamburgerO .barSkills:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
 
-  .hamburgerr.active .barr:nth-child(1),
-  .hamburgerr2.active .barr2:nth-child(1),
-  .hamburgerr3.active .barr3:nth-child(1){  transform: translateY(0px) rotate(45deg); }
+  .hamburgerFront.active .barSkills:nth-child(1),
+  .hamburgerBack.active .barSkills:nth-child(1),
+  .hamburgerO.active .barSkills:nth-child(1){  transform: translateY(0px) rotate(45deg); }
 
-  .hamburgerr.active .barr:nth-child(2),
-  .hamburgerr2.active .barr2:nth-child(2),
-  .hamburgerr3.active .barr3:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
+  .hamburgerFront.active .barSkills:nth-child(2),
+  .hamburgerBack.active .barSkills:nth-child(2),
+  .hamburgerO.active .barSkills:nth-child(2){ transform: translateY(-10px) rotate(-45deg); }
 
+  .circular-container {
+    width: 70%;
+    background-color: var(--body2-color);
+    border-radius: 20px;
+    max-width: 1500px;
+    padding-bottom: 50px;
+    margin: 10px auto 50px auto;
+    display: flex;    
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+  }
+
+  .outros .circular-container{ padding-bottom: 80px; }
+  
   .circular{
     width: 120px;
     height: 70px;
@@ -133,15 +131,15 @@
   @media screen and (max-width: 768px) {
     .skills{ width: 90%; }
 
-    .CircularContainer, .CircularContainer2, .CircularContainer3 { width: 90%;}
+    .circular-container { width: 90%;}
     
-    .frontTeste { width: 90%;}
+    .buttonSkills { width: 90%;}
   }
 
   @media screen and (max-width: 290px) {
     .skills{ width: 98%; }
 
-    .CircularContainer {
+    .circular-container {
       width: 180px;
       margin-left: -21px;
     }

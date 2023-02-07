@@ -1,4 +1,4 @@
-import './scss/Skills.modules.scss';
+import './Style/Skills.modules.scss';
 import { useState } from 'react';
 
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
@@ -6,20 +6,30 @@ import "react-circular-progressbar/dist/styles.css";
 
 export function Skills() {
 
-    function menuHamburgerr() {
-        const hamburgerr = document.querySelector(".hamburgerr");    
-        hamburgerr.classList.toggle("active");
-    }
+    const [isVisibleFront, setIsVisibleFront] = useState(false);    
+    const [isActiveFront, setIsActiveFront] = useState(false);
+  
+    const toggleVisibilityFront = () => {
+      setIsVisibleFront(!isVisibleFront);
+      setIsActiveFront(!isActiveFront);
+    };
 
-    function menuHamburgerr2() {
-        const hamburgerr = document.querySelector(".hamburgerr2");    
-        hamburgerr.classList.toggle("active");
-    }
+    const [isVisibleBack, setIsVisibleBack] = useState(false);    
+    const [isActiveBack, setIsActiveBack] = useState(false);
 
-    function menuHamburgerr3() {
-        const hamburgerr = document.querySelector(".hamburgerr3");    
-        hamburgerr.classList.toggle("active");
-    }
+    const toggleVisibilityBack = () => {
+        setIsVisibleBack(!isVisibleBack);
+        setIsActiveBack(!isActiveBack);
+    };
+
+    
+    const [isVisibleO, setIsVisibleO] = useState(false);    
+    const [isActiveO, setIsActiveO] = useState(false);
+
+    const toggleVisibilityO = () => {
+        setIsVisibleO(!isVisibleO);
+        setIsActiveO(!isActiveO);
+    };
 
     const percentage = 90;
     const percentage2 = 80;
@@ -29,38 +39,25 @@ export function Skills() {
     const percentage6 = 35;    
     const percentage7 = 25;
 
-    const [showFront,setFront]=useState(false);
-    const [showBack, setBack]=useState(false);
-    const [showO, setO]=useState(false);
-
     return (
         <>
-           <section id='Skills' class="skills-zone pt-100 pb-0">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="section-title">
-                            <h2 class="title">Skills</h2>
-                            <hr />
-                        </div> 
-                    </div>
+           <section id='Skills' class="skills-zone pt-100 pb-0">            
+                <div class="section-title">
+                    <h2 class="title">Skills</h2>
+                    <hr />
                 </div>   
 
                 <div class="skills">
                     <div id="frontEnd" className='frontEnd'>                        
-                        <button className="frontTeste" onClick={()=>setFront(!showFront)} >   
-                            <div onClick={menuHamburgerr} >                           					
-                                    <div class="hamburgerr">
-                                        <span class="barr"></span>
-                                        <span class="barr"></span>
-                                    </div>   
-                                <h1>Front-End</h1>		  
-                            </div> 
-                        </button>   
-
-                        {
-                        showFront?
-                            <div className='CircularContainer'>
+                        <button className="buttonSkills"onClick={toggleVisibilityFront}>   
+                            <div className={`hamburgerFront ${isActiveFront ? "active" : ""}`} onClick={toggleVisibilityFront}>                           					
+                                <span class="barSkills"></span>
+                                <span class="barSkills"></span>
+                            </div>   
+                            <h1>Front-End</h1>
+                        </button>  
+                        {isVisibleFront &&
+                            <div className='circular-container'>
                                     <div className='circular'>
                                         <CircularProgressbar value={percentage} text={`${percentage}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                         <h1>HTML</h1>
@@ -94,28 +91,23 @@ export function Skills() {
                                         <h1>BootStrap</h1>
                                     </div>
                             </div>
-                        :null
                         }      
                     </div>
                 </div>                     
 
                 <div class="skills">
                     <div id="backEnd" className='backEnd'>
-                        <button className="frontTeste" onClick={()=>setBack(!showBack)}>
-                            <div onClick={menuHamburgerr2} >                             					
-                                    <div class="hamburgerr2">
-                                        <span class="barr2"></span>
-                                        <span class="barr2"></span>
-                                    </div>   
-                                <h1>Back-End</h1>		
-                            </div> 
-                        </button>  
-
-                        {
-                        showBack?
-                            <div className='CircularContainer2'>
+                        <button className="buttonSkills" onClick={toggleVisibilityBack}>   
+                            <div className={`hamburgerBack ${isActiveBack ? "active" : ""}`} onClick={toggleVisibilityBack}>                           	                           					
+                                <span class="barSkills"></span>
+                                <span class="barSkills"></span>
+                            </div>
+                            <h1>Back-End</h1>
+                        </button> 
+                        {isVisibleBack &&
+                            <div className='circular-container'>
                                 <div className='circular'>
-                                    <CircularProgressbar value={percentage3} text={`${percentage3}%`} counterClockwise styles={buildStyles({ text: "Impact", textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
+                                    <CircularProgressbar value={percentage3} text={`${percentage3}%`} counterClockwise styles={buildStyles({ textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                     <h1>PHP</h1>
                                 </div>
                                 <div className='circular'>
@@ -143,27 +135,21 @@ export function Skills() {
                                     <h1>C#</h1>
                                 </div>                          
                             </div> 
-                        :null
-                        }         
+                        }          
                     </div>
                 </div> 
 
                 <div class="skills">
                     <div id="outros" className='outros'>
-                        <button className="frontTeste" onClick={()=>setO(!showO)}>     
-                            <div onClick={menuHamburgerr3}>   
-                                <div class="hamburgerr3">
-                                        <span class="barr3"></span>
-                                        <span class="barr3"></span>
-                                    </div>                                
-                                <h1>Designer, Animação, Desenho e Hardware</h1>	                             					
-                                    
-                            </div>                        
+                    <button className="buttonSkills"onClick={toggleVisibilityO}>   
+                            <div className={`hamburgerO ${isActiveO ? "active" : ""}`} onClick={toggleVisibilityO}>  
+                                <span class="barSkills"></span>
+                                <span class="barSkills"></span>
+                            </div>                                
+                            <h1>Designer, Animação, Desenho e Hardware</h1>	                                  
                         </button> 
-
-                        {
-                        showO?
-                            <div className='CircularContainer3'>
+                        {isVisibleO &&
+                            <div className='circular-container'>
                                 <div className='circular'>
                                     <CircularProgressbar value={percentage2} text={`${percentage2}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                     <h1>PhotoShop</h1>
@@ -192,12 +178,10 @@ export function Skills() {
                                     <CircularProgressbar value={percentage} text={`${percentage}%`} counterClockwise styles={buildStyles({textColor: "var(--body-color)", pathColor: "var(--subtitle-color)", trailColor: "rgba(150,150,150,0.3)"})} />
                                     <h1>Montagem de PC</h1>
                                 </div>
-                            </div>  
-                        :null
+                            </div>
                         }      
                     </div>
                 </div>
-            </div> 
             </section>
         </>
     );

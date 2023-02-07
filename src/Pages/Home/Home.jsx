@@ -1,4 +1,4 @@
-import './scss/Home.modules.scss';
+import './Style/Home.modules.scss';
 import { useState, useEffect } from 'react';
 
 import Loading from '../../Components/Loading/Loading';
@@ -43,8 +43,9 @@ export function Home() {
             {loading?      
             <Loading />:
                 <div>
-                    <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitle2-color)'}} innerStyle={{backgroundColor: 'var(--subtitle2-color)'}} />
-                    <div className='imgBackground'></div>   
+                    <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
+                    <div className='imgBackground'></div> 
+                      
                     <Header /> 
                     <MouseParallaxContainer>  
                         <div id='Home' class="header-content">                                              

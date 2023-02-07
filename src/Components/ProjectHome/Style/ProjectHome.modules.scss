@@ -15,82 +15,24 @@
   margin: auto;
 }
 
-.classProject{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-bottom: 70px;
-}
+.projects-Home .container p{ color: var(--body-color);}
 
-.classProject .w50{
-  margin: 20px auto;
-  flex: 0 0 33%;
-  max-width: 33%;
-}
-
-.classProject .text-center{
-  text-align: center!important;
-}
-
-.classProject .row{
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.VamoLa{  
+.projects-info{
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   justify-content: space-between;  
   flex-direction: row;
+  margin-bottom: 70px;
 }
 
-.single-project2 {
-  width: 100%;
-  position: relative;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.projects-info .project-container{
+  margin: 20px auto;
+  flex: 0 0 33%;
+  max-width: 33%;
 }
 
-.single-project2 .projectHome-image img {
-  width: 100% !important; 
-  border-radius: 10px;  
-  height: 100% !important;
-  border: 2px solid var(--subtitle-color);
-}
-
-.PlaceUP {
-  width: 69%;
-  height: auto;
-  position: relative;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.Goku{  
-  position: relative;
-  width: 30%;
-}
-
-.Instagram {
-  position: relative;
-  width: 100%;  
-  margin-top: 31px;
-}
-
-.Pokedex{  width: 100%;  }
-
-.container-projectHome{ margin: auto; }
-
-.container-projectHome p{ color: var(--body-color);}
-
-.classProject h2{
+.projects-info h2{
   color: var(--subtitle-color);
   margin: 10px auto;
   font-size: 36px;
@@ -105,7 +47,30 @@
   padding-bottom: 5px; 
 }
 
-.single-projectHome {
+.placeup-container {
+  width: 69%;
+  height: auto;
+  position: relative;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.instagram-pokedex-container{  
+  position: relative;
+  width: 30%;
+}
+
+.instagram {
+  position: relative;
+  width: 100%;  
+  margin-top: 31px;
+}
+
+.pokedex{  width: 100%;  }
+
+.project {
   width: 100%;
   position: relative;
   display: flex;
@@ -114,15 +79,14 @@
   justify-content: space-between;
 }
 
-.single-projectHome .projectHome-image img {
+.project .project-image img {
     width: 100% !important;
     height: auto; 
     border-radius: 10px;
     border: 2px solid var(--subtitle-color);
 }
 
-.single-projectHome .work-overlay,
-.single-project2 .work-overlay {
+.project .work-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -139,8 +103,7 @@
     transition: all 0.3s ease-out 0s; 
 }
 
-.single-projectHome .work-overlay .work-content,
-.single-project2 .work-overlay .work-content{
+.project .work-overlay .work-content{
     position: absolute;
     top: 50%;
     left: 0;
@@ -152,8 +115,7 @@
     transform: translateY(-50%); 
 }
 
-.single-projectHome .work-overlay .work-content .work-title,
-.single-project2 .work-overlay .work-content .work-title{
+.project .work-overlay .work-content .work-title{
     font-size: 22px;
     color: var(--bg-color);
     font-weight: 600;
@@ -171,14 +133,12 @@
     opacity: 0; 
 }
     
-.single-projectHome:hover .work-overlay,
-.single-project2:hover .work-overlay {
+.project:hover .work-overlay {
     opacity: 1;
     visibility: visible; 
 }
 
-.single-projectHome:hover .work-overlay .work-content .work-title,
-.single-project2:hover .work-overlay .work-content .work-title {
+.project:hover .work-overlay .work-content .work-title {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -199,66 +159,58 @@
 }
 
 @media only screen and (max-width: 1060px) {
-    .classProject h2 { font-size: 27px;} 
+    .projects-info h2 { font-size: 27px;} 
 
-    .single-project .projectHome-image img { width: 100% !important; }
+    .project .project-image img { width: 100% !important; }
 
-    .single-project2 .projectHome-image img { width: 100% !important; }
-
-    .PlaceUP {    
-        flex: 0 0 32%;
-        width: 32%;
-        display: flex;  
-        margin-left: 3px;  
-    }
-
-    .Goku{  
-        flex: 0 0 66%;
-        width: 66%;
+    .placeup-container {    
+        flex: 0 0 33.5%;
         display: flex;  
     }
 
-    .Instagram {
-        flex: 0 0 48%;
-        width: 100%;        
-        margin-top: 0px;
+    .instagram-pokedex-container{  
+        flex: 0 0 66.2%;
+        display: flex;  
     }
 
-    .Pokedex{     
-        flex: 0 0 50%;
-        width: 100%;
-        margin-left: 4px;
-    }  
+    .instagram {  margin-top: 0px;  }
+
+    .pokedex{ margin-left: 3px;  }  
 }
 
 @media (max-width: 767px) {
-    .title-project {font-size: 30px;} 
-
     .projects-Home{
         padding-top: 150px;
         padding-bottom: 80px; 
     } 
 
-    .projects-Home .row{ display: block; }
+    .projects-info{ 
+      display: block;       
+      margin-bottom: 0px;
+    }    
 
-    .projects-Home .w50{
+    .projects-info .project-container{
         flex: 0 0 90%;
         max-width: 90%;
     }
 
-    .PlaceUP {    
+    .projec
+
+    .title-project {font-size: 30px;} 
+
+    .placeup-container {    
         flex: 0 0 90%;
-        max-width: 90%;
+        width: 90%;
         display: block;  
         margin: auto;
     }
 
-    .Goku{  
+    .instagram-pokedex-container{  
         flex: 0 0 90%;
-        max-width: 90%;
+        width: 90%;
         display: block;      
         margin: auto;
     }   
-    
-    .Pokedex{ margin-left: 0px; }
+
+    .pokedex{ margin-left: 0px; }
 }

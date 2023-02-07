@@ -9,14 +9,8 @@
 
 .about-zone .container{
   width: 100%;
-  max-width: 800px;
+  max-width: 700px;
   margin: auto;
-}
-
-.about-zone .col-lg-6{
-  position: relative;
-  width: 100%;  
-  margin: -50px auto 0 auto;
 }
 
 .about-content .about-title {
@@ -26,25 +20,14 @@
 }
 
 .about-content .about { 
-  width: 80%; 
+  width: 100%; 
   margin: 10px auto;
-  margin-top: -30px;
+  margin-top: -60px;
 }
 
-.Teste{
+.information-about{
   width: 100%;
-  padding-left: 100px;
-}
-
-.section-title p{
-  width: 90%;
   margin: auto;
-}
-
-.single-info{
-  width: 100%;  
-  display: flex!important;
-  align-items: center!important;
 }
 
 .about-content ul {padding-top: 15px;}
@@ -55,17 +38,21 @@
   margin: 10px auto;
 }
 
-.about-content .single-info .info-icon .aboutIcon {
+.about-content .information-about .info-icon{
   font-size: 16px;
-  color: var(--subtitle-color);
+  display: flex;
 }
 
-.about-content .single-info .info-text {
+.about-content .information-about .info-icon .aboutIcon{
+  color: var(--subtitle-color);  
   text-align: left;
+  margin-top: 4px;
+}
+
+.about-content .information-about p span {  
+  color: var(--subtitle-color);
   margin-left: 10px;
 }
-
-.about-content .single-info .info-text p span {  color: var(--subtitle-color);}
 
 /*===========================
        RESPONSIVE CSS 
@@ -74,19 +61,18 @@
 @media (max-width: 767px) {
   .about-content .about { 
     width: 100%; 
-    margin: 10px auto;
+    margin: 20px auto;
   }
 
-  .about-zone .col-lg-6{ margin: 0px auto; }
-  
+  .about-content { 
+    width: 90%; 
+    margin: auto;
+  }
+ 
   .about-zone{  padding-bottom: 200px;  }
 
-  .about-zone .col-lg-6{  width: 80%;  }
-
-  .Teste{ padding-left: 10px; }
-  
-  .about-content ul {padding-top: 15px;}
-  
+  .information-about{ padding-left: 10px; }  
+ 
   .about-content ul li {
     width: 100%;
     float: left;

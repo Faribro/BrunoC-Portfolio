@@ -1,4 +1,4 @@
-import './scss/Loading.modules.scss';
+import './Style/Loading.modules.scss';
 import React from 'react';
 
 import { BallTriangle } from  'react-loader-spinner';

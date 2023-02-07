@@ -1,20 +1,20 @@
-import './scss/Project.modules.scss';
+import './Style/Project.modules.scss';
 import { useState, useEffect } from 'react';
 
 import Loading from '../../Components/Loading/Loading';
-import { HeaderProject } from '../../Components/HeaderProject/HeaderProject';
+import { HeaderProject } from '../../Components/Header/HeaderProject/HeaderProject';
 import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 
-import Blind from './Image/blind.png';
-import Governo from './Image/governo.png';
-import Hotel from './Image/hotel.png';
-import Instagram from './Image/Instagram.png';
-import Pizzaria from './Image/pizzaria.png';
-import Placeup from './Image/placeup.png';
-import Pokedex from './Image/pokedex.png';
-import Todolist from './Image/todolist.png';
-import Caoselheiro from './Image/caoselheiro.png';
+import Blind from './Images/blind.png';
+import Governo from './Images/governo.png';
+import Hotel from './Images/hotel.png';
+import Instagram from './Images/Instagram.png';
+import Pizzaria from './Images/pizzaria.png';
+import Placeup from './Images/placeup.png';
+import Pokedex from './Images/pokedex.png';
+import Todolist from './Images/todolist.png';
+import Caoselheiro from './Images/caoselheiro.png';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
@@ -36,19 +36,7 @@ export function Projects() {
         {loading?      
             <Loading />:
             <div>
-                <AnimatedCursor
-                    innerSize={8}
-                    outerSize={35}
-                    innerScale={1}
-                    outerScale={1.7}
-                    outerAlpha={0}
-                    hasBlendMode={true}
-                    outerStyle={{
-                        border: '3px solid var(--subtitle2-color)'
-                    }}
-                    innerStyle={{
-                        backgroundColor: 'var(--subtitle2-color)'
-                }} />
+                <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
                 <HeaderProject />
                     <section id='Project' className="projects-zone" data-aos="fade-up">
                         <div className="container">

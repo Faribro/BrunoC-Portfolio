@@ -3,23 +3,23 @@
 :root {
   --bg-color: #e9e9e9;
   --body-color: #242424;  
-  --body2-color: #f9f9f9;
+  --bodyInvert-color: #f9f9f9;
   --title-color: #4e68f9;
   --subtitle-color: #4e68f9;
-  --subtitle2-color: #78D7DD;  
-  --subtitle3-color: #78D7DD;  
-  --subtitle4-color: #4e68f9;
+  --subtitleInvert-color: #78D7DD;  
+  --blueCyan-color: #78D7DD;  
+  --blue-color: #4e68f9;
 } 
 
 .dark {  
   --bg-color: #242424;
   --body-color: #e9e9e9;  
-  --body2-color: #1e1e1e;
+  --bodyInvert-color: #1e1e1e;
   --title-color: #4e68f9;
   --subtitle-color: #78D7DD;
-  --subtitle2-color: #4e68f9;
-  --subtitle3-color: #78D7DD;  
-  --subtitle4-color: #4e68f9;
+  --subtitleInvert-color: #4e68f9;
+  --blueCyan-color: #78D7DD;  
+  --blue-color: #4e68f9;
 }
 
 *{
@@ -31,14 +31,14 @@
   font-family: 'Heebo';
   font-family: 'Itim';
   font-family: 'Shadows Into Light';
-  scroll-behavior: smooth;
 }
 
 html,body{
   font-family: "Poppins", sans-serif;
   width: 100%;
   background-color: var(--bg-color);
-  scroll-behavior: smooth;
+  scroll-behavior: smooth;   
+  word-break: break-word;
 }
 
 body::-webkit-scrollbar { 
@@ -58,7 +58,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-thumb:hover {
-  background: var(--subtitle2-color);
+  background: var(--subtitleInvert-color);
 }
 
 main {
@@ -246,14 +246,6 @@ select {
   font-family: inherit;
 }
 
-.imgBackground {
-  width: 100%;
-  height: 400px;
-  position: absolute;
-  top: 1600px;
-  z-index: 0;
-  opacity: 0.9;
-  background-image: url("./Components/Curriculum/Images/programmimg2.png");
-  background-repeat: no-repeat;
-  background-position: center 100%;
+@media screen and (max-width: 191px) { 
+  body{  overflow-x: hidden; }
 }

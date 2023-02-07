@@ -23,11 +23,6 @@
   padding-bottom: 30px;
 }
 
-.IconCourse{
-  height: 100%;
-  width: 100%;
-}
-
 .vertical-timeline-element-content .vertical-timeline-element-date {
   position: absolute;
   float: left;
@@ -47,52 +42,18 @@
   color: var(--body-color);
   padding-bottom: 10px; 
 }  
-  
-.title p{
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--body-color);
-  padding-bottom: 10px; 
-}  
-
-.w50{
-  margin: 20px auto;
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-.text-center{
-  text-align: center!important;
-}
-
-.row{
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .titleCourse{
   font-family: "Lato", sans-serif !important;
   font-weight: 600 !important;;
-  margin: 0px !important;;
+  margin: 0px auto !important;;
   font-size: 35px !important;
   color: var(--body-color) !important;;
 }
 
-.courses{ padding-bottom: 100px; }
-  
-.container-projetos{ margin: auto; }
-
-.single-work {
-  position: relative;
-  display: block;
-}
-
-.date{
-  padding: 10px 0px;
-  font-weight: bold;
-  font-size: 22px;
+.icon-course{
+  height: 100%;
+  width: 100%;
 }
 
 .info-course { padding-bottom: 20px; }
@@ -102,27 +63,12 @@
   font-size: 20px;
 }
 
-.course{
-  font-size: 28px;
-  font-weight: 600;
-  padding-top: 20px;
-  color: var(--subtitle-color);
-  user-select: none;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s; 
-}
-
-.course:hover { color: var(--subtitle2-color); }
-
 .logo-institute{
   width: 100%;
   max-width: 250px;
   height: 230px;
   border-radius: 20px;
-  margin: -20px auto 20px auto;
+  margin: 0px auto 20px auto;
 }
 
 .main-btn {
@@ -151,8 +97,8 @@
 }
 
 .main-btn:hover {
-  color: var(--subtitle2-color);  
-  border-bottom: 2px solid var(--subtitle2-color);
+  color: var(--subtitleInvert-color);  
+  border-bottom: 2px solid var(--subtitleInvert-color);
 }
     
 /*===========================
@@ -180,17 +126,4 @@
     padding-top: 90px;
     padding-bottom: 100px; 
   } 
-}
-
-@media (max-width: 630px) {
-  .row{ display: block; }
-
-  .w50{
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-@media only screen and (min-width: 1170px){
-  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date { text-align: left; } 
 }

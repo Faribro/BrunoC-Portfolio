@@ -1,16 +1,16 @@
-import './scss/Courses.modules.scss';
+import './Style/Courses.modules.scss';
 import { useState, useEffect } from 'react';
 
 import Loading from '../../Components/Loading/Loading';
-import { HeaderCourse } from '../../Components/HeaderCourse/HeaderCourse';
+import { HeaderCourse } from '../../Components/Header/HeaderCourse/HeaderCourse';
 import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 
-import Estacio from './Image/Estacio-Logo.jpg';
-import Proa from './Image/Proa-Logo.jpg';
-import DankiCode from './Image/DankiCode-Logo.jpg';
-import Udemy from './Image/Udemy-Logo.jpg';
-import Microlins from './Image/Microlins-Logo.jpg';
+import Estacio from './Images/Estacio-Logo.jpg';
+import Proa from './Images/Proa-Logo.jpg';
+import DankiCode from './Images/DankiCode-Logo.jpg';
+import Udemy from './Images/Udemy-Logo.jpg';
+import Microlins from './Images/Microlins-Logo.jpg';
 
 import { IoIosSchool } from 'react-icons/io';
 import { RiComputerFill } from 'react-icons/ri';
@@ -32,24 +32,23 @@ export function Courses() {
       }, 800);
     }, [])
 
+    
+    const MicrolinsIco = () => ( <img className="icon-course" alt="Microlins" src={Microlins} /> );
+
+    const DankiIco = () => ( <img className='icon-course' alt='Danki Code' src={ DankiCode } /> );
+
+    const ProaIco = () => ( <img className="icon-course" alt="Proa" src={Proa} /> );
+
+    const UdemyIco = () => ( <img className='icon-course' alt='Udemy' src={ Udemy } /> );
+
+    const EstacioIco = () => ( <img className="icon-course" alt="Estácio" src={Estacio} /> );
+
     return (
         <>
             {loading?      
             <Loading />:
                 <div>
-                    <AnimatedCursor
-                        innerSize={8}
-                        outerSize={35}
-                        innerScale={1}
-                        outerScale={1.7}
-                        outerAlpha={0}
-                        hasBlendMode={true}
-                        outerStyle={{
-                            border: '3px solid var(--subtitle2-color)'
-                        }}
-                        innerStyle={{
-                            backgroundColor: 'var(--subtitle2-color)'
-                    }} />
+                    <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
                     <HeaderCourse /> 
                     <section id='Courses' className="courses-zone">
                         <div class="container">
@@ -90,8 +89,8 @@ export function Courses() {
                                     date="07/2018 - 02/2020"
                                     icon={ <MicrolinsIco /> } >
                                     <h3>Na Microlins eu escolhi programação de games e acabei fazendo estes cursos, o que não tem nada haver com programação de games.</h3> 
-                                    <h3 class="course pt-20">"Programação de Games"</h3>         
-                                    <div class="info-course text-center">                                                        
+                                    <h3 class="course">"Programação de Games"</h3>         
+                                    <div class="info-course">                                                        
                                         <p>Informática;</p>
                                         <p>Microsoft Office (Excel, Word, PowerPoint, etc...);</p>
                                         <p>Pacote Adobe ( PhotoShop, AfterEffects, Illustrator );</p>
@@ -100,7 +99,7 @@ export function Courses() {
                                         <p>Programação C# em sistemas;</p>
                                         <p>Banco de Dados.</p>
                                     </div>
-                                    <button className='main-btn' ><a href='https://www.microlins.com.br/cursos' rel="noreferrer" target="_blank">SITE</a></button>
+                                    <button className='main-btn'><a href='https://www.microlins.com.br/cursos' rel="noreferrer" target="_blank">SITE</a></button>
                                 </VerticalTimelineElement>
                                 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -120,8 +119,8 @@ export function Courses() {
                                     icon={ <DankiIco /> } >
                                     <h3>Na Danki Code aprendi realmente programação de games e me interessei por outras áreas de programação,
                                         e comprei o pacote Full-Stack Master, onde aprendi Desenvolvimento Web e estou aprendendo Desenvolvimento mobile.</h3>
-                                    <h3 class="course pt-20">Full-Stack Master</h3>
-                                    <div class="info-course text-center">                                                        
+                                    <h3 class="course">Full-Stack Master</h3>
+                                    <div class="info-course">                                                        
                                         <p>Desenvolvedor Full-Stack;</p>
                                         <p>Desenvolvimento Mobile;</p>
                                         <p>Desenvolvimento de Games 2D e 3D;</p>
@@ -160,7 +159,7 @@ export function Courses() {
                                         <h3>Participei de um processo seletivo com 5 etapas em 05/2021 e não passei, fiz novamente em 12/2021 e dessa vez passei.</h3>
                                         <h3>O Proa não foi o curso que mais me ensinou, mas foi o mais importante. Em 6 meses eu realmente entendi como funcionava o mercado de programação, fiz amizades na área, tive um suporte de verdade
                                             e aumentei minha Networking.</h3>
-                                        <h3 class="course pt-20">Programador Web Java</h3>              
+                                        <h3 class="course">Programador Web Java</h3>              
                                         <div class="info-course">                                                        
                                             <p>HTML5;</p>
                                             <p>CSS3;</p>
@@ -183,8 +182,8 @@ export function Courses() {
                                         <h2 class="titleCourse">Udemy</h2>             
                                         <hr />                                          
                                         <img class="logo-institute" alt='Udemy' src={ Udemy } />   
-                                        <h3 class="course pt-20">Cursos Separados</h3>
-                                        <div class="info-course text-center"> 
+                                        <h3 class="course">Cursos Separados</h3>
+                                        <div class="info-course"> 
                                             <p>Inglês;</p>                                                
                                             <p>JavaScript;</p>                                                    
                                             <p>TypeScript;</p>
@@ -211,7 +210,7 @@ export function Courses() {
                                     date="12/2022 - 06/2024"
                                     icon={ <EstacioIco /> }>
                                         <h3>Na faculdade nesse bimestre estamos vendo as seguintes matérias:</h3>
-                                        <h3 class="course pt-20">Análise e Desenvolvimento de Sistemas</h3>
+                                        <h3 class="course">Análise e Desenvolvimento de Sistemas</h3>
                                         <div class="info-course">                                                        
                                             <p>Arquitetura de Computadores</p>
                                             <p>Desenv. Web em Html5, Css, Javascript e Php</p>
@@ -250,43 +249,3 @@ AOS.init({
     mirror: false, 
     anchorPlacement: 'top-bottom', 
 });
-
-export function MicrolinsIco() {
-    return (
-        <>       
-            <img className='IconCourse' src={ Microlins } />                                           
-        </>	    
-    );
-}
-
-export function DankiIco() {
-    return (
-        <>       
-            <img className='IconCourse' src={ DankiCode } />                                           
-        </>	    
-    );
-}
-
-export function ProaIco() {
-    return (
-        <>       
-            <img className='IconCourse' src={ Proa } />                                           
-        </>	    
-    );
-}
-
-export function UdemyIco() {
-    return (
-        <>       
-            <img className='IconCourse' src={ Udemy } />                                           
-        </>	    
-    );
-}
-
-export function EstacioIco() {
-    return (
-        <>       
-            <img className='IconCourse' src={ Estacio } />                                           
-        </>	    
-    );
-}

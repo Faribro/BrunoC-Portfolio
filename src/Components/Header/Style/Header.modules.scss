@@ -77,16 +77,16 @@ header nav{
   transition: all 0.3s ease-out 0s; 
 }
 
-.desktop li a.Select, .desktop li:hover a {color: var(--subtitle-color);}
+.desktop li a.select, .desktop li:hover a {color: var(--subtitle-color);}
 
-.desktop li a.Select::before, .desktop li:hover a::before {height: 45px;}
+.desktop li a.select::before, .desktop li:hover a::before {height: 45px;}
 
 .desktop li a:hover{
     color: var(--subtitle-color);
     transition: all 0.5s;
 }
 
-.Select { color: var(--subtitle-color)!important; }
+.select { color: var(--subtitle-color) !important; }
 
 .mobile{
     position: relative;
@@ -171,7 +171,7 @@ input.toggle-control + label::before {
 
 input.toggle-control + label::after {
     width: 18px;
-    background: var(--subtitle2-color);
+    background: var(--subtitleInvert-color);
     border-radius: 100%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
@@ -259,5 +259,5 @@ input.toggle-control:checked + label::after { margin-left: 20px;}
 
     .nav-item a:hover{color: var(--subtitle-color);}
 
-    .SelectMobile a{ color: var(--subtitle-color); }
+    .select-mobile a{ color: var(--subtitle-color); }
 }
