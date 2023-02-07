@@ -17,7 +17,10 @@
 
 .projects-Home .container p{ color: var(--body-color);}
 
-.section-title p{ width: 90%; }
+.section-title p{ 
+  width: 90%; 
+  msrgin: auto;
+}
 
 .projects-info{
   display: flex;
