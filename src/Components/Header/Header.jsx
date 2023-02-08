@@ -2,6 +2,8 @@ import './Style/Header.modules.scss';
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 
+import logo from "./Images/logo.png"; 
+
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs"; 
 
 import { Link } from "react-scroll";
@@ -48,6 +50,10 @@ export function Header() {
 	return (
 	<>
 		<header style={{ background: backgroundColorScroll }} className={`navigation ${scroll < 10 ? "" : "sticky"}`}>  
+			<figure className='container-logo'>
+				<img alt='Logo' src={ logo } className={`logo ${scroll < 10 ? "" : "sticky"}`}></img>
+			</figure>
+			
 			<section className="toggleArea">
 				<BsFillSunFill className='sun' />
 					<input type="checkbox" id="switch" class="toggle-control" />
@@ -70,6 +76,9 @@ export function Header() {
 			<section className="mobile">
 				<nav className="navbar">
 					<ul className={`nav-menu ${isActive ? "active" : "nav-menu"}`}>
+						<figure className='container-logo-mobile'>
+							<img alt='Logo' src={ logo } className='logo-mobile'></img>
+						</figure>
 						<li className="nav-item">
 							<Link activeClass="select-mobile" spy={true} to="Home"><NavLink to="">Inicio</NavLink></Link>
 						</li>

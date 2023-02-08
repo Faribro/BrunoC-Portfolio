@@ -17,7 +17,7 @@ export function ProjectHome() {
             <main id="Project" className="projects-Home">
                 <section className="container">
                     <section className="section-title">
-                        <h2 className="title-project">Projetos</h2>
+                        <h2 className="title">Projetos</h2>
                         <hr />
                         <p>Alguns dos projetos feito por mim, em grupo e individual.</p>                            
                     </section> 

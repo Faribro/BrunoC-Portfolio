@@ -55,6 +55,7 @@
   color: var(--subtitle-color);
   text-transform: uppercase;
   padding-bottom: 15px; 
+  font-family: "Poppins";
 }
 
 .cover-container-right .title-cover {
@@ -68,12 +69,14 @@
 .professions-cover{  
   display: flex;
   font-size: 40px;
-  color: var(--blueCyan-color);
+  color: var(--blueCyan-color);  
+  font-family: "Poppins";
 }
 
 .cover-container-right .cover-btn {
   margin: 40px 0px;   
   float: left;
+  font-family: "Poppins";
 }
 
 .cover-btn {
@@ -184,8 +187,8 @@
 }
 
 .github-cover, .linkedin-cover{
-  width: 38px;
-  height: 23px;
+  width: 45px;
+  height: 22px;
   display: inline-block;
 }
 
@@ -212,9 +215,7 @@
 
 .cover-social .cover-social-icon ul li a {
     color: var(--subtitle-color);
-    font-size: 28px;
-    width: 35px;
-    height: 35px;
+    font-size: 31px;
     line-height: 35px;
     border-radius: 50%;
     background-color: var(--bg-color);

@@ -53,8 +53,8 @@ function Courses() {
                     <HeaderCourse /> 
                     <main id='Courses' className="courses-zone">
                         <section className="container">
-                            <article className="title">
-                                <h2>Formação Acadêmica</h2>            
+                            <article className="section-title">
+                                <h2 className="title">Formação Acadêmica</h2>            
                                 <hr />
                             </article>
                             
