@@ -6,15 +6,15 @@ import { HeaderProject } from '../../Components/Header/HeaderProject/HeaderProje
 import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 
-import Blind from './Images/blind.png';
-import Governo from './Images/governo.png';
-import Hotel from './Images/hotel.png';
-import Instagram from './Images/Instagram.png';
-import Pizzaria from './Images/pizzaria.png';
-import Placeup from './Images/placeup.png';
-import Pokedex from './Images/pokedex.png';
-import Todolist from './Images/todolist.png';
-import Caoselheiro from './Images/caoselheiro.png';
+import Blind from './Images/blind.webp';
+import Governo from './Images/governo.webp';
+import Hotel from './Images/hotel.webp';
+import Instagram from './Images/Instagram.webp';
+import Pizzaria from './Images/pizzaria.webp';
+import Placeup from './Images/placeup.webp';
+import Pokedex from './Images/pokedex.webp';
+import Todolist from './Images/todolist.webp';
+import Caoselheiro from './Images/caoselheiro.webp';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 

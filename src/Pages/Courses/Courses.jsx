@@ -6,17 +6,17 @@ import { HeaderCourse } from '../../Components/Header/HeaderCourse/HeaderCourse'
 import { Footer } from '../../Components/Footer/Footer';
 import { Scroll } from '../../Components/ScrollTop/Scroll';
 
-import Estacio from './Images/Estacio-Logo.jpg';
-import Proa from './Images/Proa-Logo.jpg';
-import DankiCode from './Images/DankiCode-Logo.jpg';
-import Udemy from './Images/Udemy-Logo.jpg';
-import Microlins from './Images/Microlins-Logo.jpg';
+import Estacio from './Images/Estacio-Logo.webp';
+import Proa from './Images/Proa-Logo.webp';
+import DankiCode from './Images/DankiCode-Logo.webp';
+import Udemy from './Images/Udemy-Logo.webp';
+import Microlins from './Images/Microlins-Logo.webp';
 
-import EstacioI from './Images/Estacio-ico.png';
-import ProaI from './Images/Proa-ico.png';
-import DankiCodeI from './Images/DankiCode-ico.png';
-import UdemyI from './Images/Udemy-ico.png';
-import MicrolinsI from './Images/Microlins-ico.png';
+import EstacioI from './Images/Estacio-ico.webp';
+import ProaI from './Images/Proa-ico.webp';
+import DankiCodeI from './Images/DankiCode-ico.webp';
+import UdemyI from './Images/Udemy-ico.webp';
+import MicrolinsI from './Images/Microlins-ico.webp';
 
 import { IoIosSchool } from 'react-icons/io';
 import { RiComputerFill } from 'react-icons/ri';

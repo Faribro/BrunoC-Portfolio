@@ -1,15 +1,15 @@
 import './Style/ProjectHome.modules.scss';
 import { NavLink } from "react-router-dom";
 
-import Blind from '../../Pages/Projects/Images/blind.png';
-import Governo from '../../Pages/Projects/Images/governo.png';
-import Hotel from '../../Pages/Projects/Images/hotel.png';
-import Instagram from '../../Pages/Projects/Images/Instagram.png';
-import Pizzaria from '../../Pages/Projects/Images/pizzaria.png';
-import Placeup from '../../Pages/Projects/Images/placeup.png';
-import Pokedex from '../../Pages/Projects/Images/pokedex.png';
-import Todolist from '../../Pages/Projects/Images/todolist.png';
-import Caoselheiro from '../../Pages/Projects/Images/caoselheiro.png';
+import Blind from '../../Pages/Projects/Images/blind.webp';
+import Governo from '../../Pages/Projects/Images/governo.webp';
+import Hotel from '../../Pages/Projects/Images/hotel.webp';
+import Instagram from '../../Pages/Projects/Images/Instagram.webp';
+import Pizzaria from '../../Pages/Projects/Images/pizzaria.webp';
+import Placeup from '../../Pages/Projects/Images/placeup.webp';
+import Pokedex from '../../Pages/Projects/Images/pokedex.webp';
+import Todolist from '../../Pages/Projects/Images/todolist.webp';
+import Caoselheiro from '../../Pages/Projects/Images/caoselheiro.webp';
 
 export function ProjectHome() {
     return (

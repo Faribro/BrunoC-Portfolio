@@ -22,8 +22,8 @@ import shape2  from './Images/shape-2.png';
 import shape3  from './Images/shape-3.png';
 import shape4  from './Images/shape-4.png';
 import shape5  from './Images/shape-5.png';
-import perfil  from './Images/perfil.jpg';
-import backgroundCover  from './Images/backgroundCover.png';
+import perfil  from './Images/perfil.webp';
+import backgroundCover  from './Images/backgroundCover.webp';
 
 import AnimatedCursor from "react-animated-cursor";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";

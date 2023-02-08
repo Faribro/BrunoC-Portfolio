@@ -10,22 +10,30 @@ export function Router() {
   return (
     <BrowserRouter>
        <Routes>        
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={
+            <React.Suspense fallback='loading...'>
+              <Error />
+            </React.Suspense>
+          } />
         
         <Route path="/" element={
-            <React.Suspense>
+            <React.Suspense fallback='loading...'>
               <App />
             </React.Suspense>
           } /> 
 
         <Route path="/Courses" 
           element={
-            <React.Suspense>
+            <React.Suspense fallback='loading...'>
               <Courses />
             </React.Suspense>
           } />
 
-        <Route path="/Projects" element={<Projects />} />
+        <Route path="/Projects" element={
+            <React.Suspense fallback='loading...'>
+              <Projects />
+            </React.Suspense>
+          } />
       </Routes>
     </BrowserRouter>
   );
