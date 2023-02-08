@@ -52,7 +52,7 @@ function Error() {
                       <div className='text-erro'>
                           <p>Ué? Parece que você se perdeu...</p>
                           <p>Volte para a página inicial!</p>
-                          <Link to="/"><button>Inicio</button></Link>
+                          <button><Link to="/">Inicio</Link></button>
                       </div>
                   </article>
                 </section>	           

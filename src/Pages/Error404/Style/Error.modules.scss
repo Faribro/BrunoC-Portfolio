@@ -28,6 +28,7 @@
   display: flex !important;
   justify-content: center;
   align-items: center;
+  font-family: "Poppins";
   z-index: 2;
 }
 
@@ -35,7 +36,7 @@
   width: 100%;
   z-index: 4;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
   justify-content: center; 
 }
 
@@ -44,9 +45,12 @@
   font-size: 18px;
   font-weight: bolder;
   letter-spacing: 0.6px;
+  font-family: "Lato";
 }
 
 .text-erro button {
+  width: 100px;
+  margin: 40px auto auto auto;
   height: 40px;
   padding: 0 30px;
   border-radius: 50px;
@@ -57,7 +61,8 @@
   text-transform: uppercase;
   font-weight: 600;
   font-size: 12px;
-  margin-top: 40px;
+  font-family: "Lato";
+  font-weight: 700;
 }
 
 .text-erro button:hover {
