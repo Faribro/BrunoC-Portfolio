@@ -7,34 +7,21 @@ const Projects = React.lazy(() => import('./Pages/Projects/Project.jsx'));
 const Error = React.lazy(() => import('./Pages/Error404/Error404.jsx'));
 
 export function Router() {
-  return (
-    <BrowserRouter>
-       <Routes>        
-        <Route path="*" element={
-            <React.Suspense fallback='loading...'>
-              <Error />
-            </React.Suspense>
-          } />
-        
-        <Route path="/" element={
-            <React.Suspense fallback='loading...'>
-              <App />
-            </React.Suspense>
-          } /> 
+  return (    
+    <React.Suspense fallback='loading...'>
+      <BrowserRouter>   
+        <Routes>        
 
-        <Route path="/Courses" 
-          element={
-            <React.Suspense fallback='loading...'>
-              <Courses />
-            </React.Suspense>
-          } />
+          <Route path="*" element={<Error />} />      
 
-        <Route path="/Projects" element={
-            <React.Suspense fallback='loading...'>
-              <Projects />
-            </React.Suspense>
-          } />
-      </Routes>
-    </BrowserRouter>
+          <Route path="/" element={<App />} /> 
+
+          <Route path="/Courses" element={<Courses />} />
+
+          <Route path="/Projects" element={<Projects />} />
+
+        </Routes>     
+      </BrowserRouter>
+    </React.Suspense>
   );
 }
