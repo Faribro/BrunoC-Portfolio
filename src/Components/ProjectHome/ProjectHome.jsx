@@ -13,7 +13,7 @@ import Caoselheiro from '../../Pages/Projects/Images/caoselheiro.webp';
 
 export function ProjectHome() {
     return (
-        <>     
+        <>    
             <main id="Project" className="projects-Home">
                 <section className="container">
                     <section className="section-title">
@@ -134,7 +134,7 @@ export function ProjectHome() {
                             <h2>Caoselheiro</h2>
                             <aside className="project">
                                 <figure className="project-image">
-                                    <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img src={ Caoselheiro } alt="Blind" /></a>
+                                    <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img st src={ Caoselheiro } alt="Blind" /></a>
                                 </figure>
                                 <aside className="work-overlay">
                                     <div className="work-content">
