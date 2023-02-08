@@ -70,8 +70,7 @@ export function Home() {
                                     <figure rel="preload" class="cover-shape shape-four layer" data-depth="0.10">                                            
                                         <img rel="preload" src={ shape4 }  alt="Shape"/>
                                     </figure>  
-                                    <figure rel="preload" class="cover-shape shape-five layer" data-depth="0.10"> 
-                                        <link rel="preload" href={ shape5 } as="image" />                                           
+                                    <figure rel="preload" class="cover-shape shape-five layer" data-depth="0.10">                   
                                         <img rel="preload" src={ shape5 }  alt="Shape"/>
                                     </figure>                          
                                 </MouseParallaxChild>

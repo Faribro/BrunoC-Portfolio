@@ -83,10 +83,6 @@
       width: 110%;
       height: 100vh;
       left: -5% !important;
-      background-image: url(../Images/cover.webp);
-      background-position: center center;
-      background-size: cover;
-      background-repeat: no-repeat;
     }
  
     .cover-content .cover-shape.shape-one img{ display: none; }  
@@ -100,20 +96,12 @@
     }
 }
     
-@media screen and (max-width: 467px) {   
-    .cover-content .cover-shape.shape-two {
-        top: 650px !important;
-        left: 13% !important; 
-        transform: rotate(-0.25turn);
-    }
+@media screen and (max-width: 768px) {   
+    .cover-content .cover-shape.shape-two { display: none; }
 
     .cover-content .cover-shape.shape-three { display: none; }
 
     .cover-content .cover-shape.shape-four { display: none; }
 
-    .cover-content .cover-shape.shape-five {
-        left: 70% !important;
-        top: 0px !important;        
-        transform: rotate(-0.35turn);   
-    }    
+    .cover-content .cover-shape.shape-five { display: none; }    
 }
