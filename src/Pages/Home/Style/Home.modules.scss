@@ -9,6 +9,8 @@
   background-color: var(--bg-color);
 }
 
+.cover-content img{object-fit: cover;}
+
 .cover-content .right-container {
   max-width: 1700px; 
   display: block;
@@ -145,6 +147,7 @@
   z-index: 5; 
   min-width: 85%;
   height: 440px;
+  object-fit: cover;
   border-radius: 15px;
   border: 10px solid var(--subtitle-color);
 }

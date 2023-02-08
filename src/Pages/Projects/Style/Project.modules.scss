@@ -12,6 +12,8 @@
   overflow: hidden;
 } 
 
+.projects-zone img{object-fit: cover;}
+
 .projects-zone .container{
   max-width: 1700px; 
   display: block;
