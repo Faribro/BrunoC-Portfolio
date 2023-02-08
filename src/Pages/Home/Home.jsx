@@ -53,25 +53,25 @@ export function Home() {
                             <div className='color-background'/>
 
                             <figure className='background-cover'>
-                                <img src={ backgroundCover }  alt="back"/>
+                                <img src={ backgroundCover } width={900} height={1010}  alt="back"/>
                             </figure>  
 
                             <section className='parallax-cover'>
                                 <MouseParallaxChild factorX={0.1} factorY={0.1}>
                                     <figure rel="preload" class="cover-shape shape-one layer" data-depth="0.10">                                            
-                                        <img rel="preload" src={ shape1 }  alt="Shape" />
+                                        <img rel="preload" width={1400} height={100} src={ shape1 }  alt="Shape" />
                                     </figure>        
                                     <figure rel="preload" class="cover-shape shape-two layer" data-depth="0.10">                                            
-                                        <img rel="preload" src={ shape2 }  alt="Shape" />
+                                        <img rel="preload" width={190} height={190} src={ shape2 }  alt="Shape" />
                                     </figure>  
                                     <figure rel="preload" class="cover-shape shape-three layer" data-depth="0.10">                                            
-                                        <img rel="preload" src={ shape3 }  alt="Shape"/>
+                                        <img rel="preload" width={250} height={220} src={ shape3 }  alt="Shape"/>
                                     </figure>  
                                     <figure rel="preload" class="cover-shape shape-four layer" data-depth="0.10">                                            
-                                        <img rel="preload" src={ shape4 }  alt="Shape"/>
+                                        <img rel="preload" width={300} height={270} src={ shape4 }  alt="Shape"/>
                                     </figure>  
                                     <figure rel="preload" class="cover-shape shape-five layer" data-depth="0.10">                   
-                                        <img rel="preload" src={ shape5 }  alt="Shape"/>
+                                        <img rel="preload" width={130} height={130} src={ shape5 }  alt="Shape"/>
                                     </figure>                          
                                 </MouseParallaxChild>
                             </section>  
@@ -89,7 +89,7 @@ export function Home() {
                                 </article>   
                                 <figure className="profile-image">
                                     <link rel="preload" href={ perfil } as="image" />    
-                                    <img rel="preload" src={ perfil } alt="perfil" />
+                                    <img rel="preload" width={400} height={440} src={ perfil } alt="perfil" />
                                 </figure> 
                             </section>    
 

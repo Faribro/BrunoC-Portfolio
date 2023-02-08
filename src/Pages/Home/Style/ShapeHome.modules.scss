@@ -32,11 +32,6 @@
     left: 13% !important; 
     transform: rotate(-0.25turn);
 }
-
-.cover-content .cover-shape.shape-two img {
-    width: 100%;
-    height: 100%;
-}
   
 .cover-content .cover-shape.shape-three {
     width: 250px;
@@ -45,21 +40,11 @@
     top: 0px !important;     
 }
 
-.cover-content .cover-shape.shape-three img {
-    width: 100%;
-    height: 100%;
-}
-  
 .cover-content .cover-shape.shape-four {
     width: 300px;
     height: 270px;
     left: 85% !important;
     top: 100px !important; 
-}
- 
-.cover-content .cover-shape.shape-four img {
-    width: 100%;
-    height: 100%;
 }
   
 .cover-content .cover-shape.shape-five{
@@ -68,12 +53,7 @@
     left: 95% !important;
     top: 700px !important;     
 }  
-
-.cover-content .cover-shape.shape-five img{
-    width: 100%;
-    height: 100%;
-}
-  
+ 
 /*===========================
        RESPONSIVE CSS 
 ===========================*/

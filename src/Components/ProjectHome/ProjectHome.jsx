@@ -26,7 +26,7 @@ export function ProjectHome() {
                         <h2>Animal Space</h2>
                             <aside className="project">
                                 <figure className="project-image">
-                                    <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><img src={Hotel} alt="hotel" /></a>
+                                    <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Hotel} alt="hotel" /></a>
                                 </figure>
                                 <div className="work-overlay">
                                     <div className="work-content">
@@ -39,7 +39,7 @@ export function ProjectHome() {
                             <h2>Governo de SP</h2>
                             <aside className="project">
                                 <figure className="project-image">
-                                    <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img src={Governo} alt="governo" /></a>
+                                    <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Governo} alt="governo" /></a>
                                 </figure> 
                                 <div className="work-overlay">
                                     <div className="work-content">
@@ -52,7 +52,7 @@ export function ProjectHome() {
                             <h2>Água na Boca</h2>
                             <aside className="project">
                                 <figure className="project-image">
-                                    <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><img src={Pizzaria} alt="pizzaria" /></a>
+                                    <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Pizzaria} alt="pizzaria" /></a>
                                 </figure>
                                 <div className="work-overlay">
                                     <div className="work-content">
@@ -66,7 +66,7 @@ export function ProjectHome() {
                             <h2>PlaceUP</h2> 
                                 <aside className="project">
                                     <figure className="project-image">
-                                        <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><img src={Placeup} alt="instagram" /></a>
+                                        <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={800} src={Placeup} alt="instagram" /></a>
                                     </figure>
                                     <div className="work-overlay">
                                         <div className="work-content">
@@ -80,7 +80,7 @@ export function ProjectHome() {
                                     <h2>Clone do Instagram</h2>
                                     <aside className="project">
                                         <figure className="project-image">
-                                            <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><img src={Instagram} alt="instagram" /></a>
+                                            <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Instagram} alt="instagram" /></a>
                                         </figure>
                                         <div className="work-overlay">
                                             <div className="work-content">
@@ -93,7 +93,7 @@ export function ProjectHome() {
                                     <h2>Pokedex</h2>
                                     <aside className="project">
                                         <figure className="project-image">
-                                            <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><img src={Pokedex} alt="Pokedex" /></a>
+                                            <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={Pokedex} alt="Pokedex" /></a>
                                         </figure>
                                         <div className="work-overlay">
                                             <div className="work-content">
@@ -108,7 +108,7 @@ export function ProjectHome() {
                             <h2>ToDo List</h2>
                             <aside className="project">
                                 <figure className="project-image">
-                                    <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><img src={ Todolist } alt="Todolist" /></a>
+                                    <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Todolist } alt="Todolist" /></a>
                                 </figure>
                                 <aside className="work-overlay">
                                     <div className="work-content">
@@ -121,7 +121,7 @@ export function ProjectHome() {
                             <h2>Blind Vision</h2>
                             <article className="project">
                                 <figure className="project-image">
-                                    <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><img src={ Blind } alt="Blind" /></a>
+                                    <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Blind } alt="Blind" /></a>
                                 </figure>
                                 <aside className="work-overlay">
                                     <div className="work-content">
@@ -134,7 +134,7 @@ export function ProjectHome() {
                             <h2>Caoselheiro</h2>
                             <aside className="project">
                                 <figure className="project-image">
-                                    <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img st src={ Caoselheiro } alt="Blind" /></a>
+                                    <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Caoselheiro } alt="Blind" /></a>
                                 </figure>
                                 <aside className="work-overlay">
                                     <div className="work-content">

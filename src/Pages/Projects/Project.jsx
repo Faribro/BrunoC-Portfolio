@@ -50,7 +50,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>PlaceUP</h2>
-                                                <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><img src={ Placeup } alt="Placeup" /></a>                                                                                                                                                                                                                                                          
+                                                <a href="https://place-up.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Placeup } alt="Placeup" /></a>                                                                                                                                                                                                                                                          
                                                 <p>Meu TCC feito no PROA, a PlaceUP  uma plataforma online que auxilia o comerciamente a precificar e expor seus produtos, e disponibiliza uma vitrine online para que os clientes possam reservar seus produtos favoritos sem sair de casa!</p>
                                             </div>
                                         </aside>
@@ -59,7 +59,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>Animal Space</h2>
-                                                <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><img src={ Hotel } alt="hotel" /></a>                                                                                                                                                                                                                     
+                                                <a href="https://animal-space.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Hotel } alt="hotel" /></a>                                                                                                                                                                                                                     
                                                 <p>Um tema de projeto sortiado e feito no curso do Proa. Um hotel para animais.</p>
                                             </div>
                                         </aside>
@@ -68,7 +68,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>Governo de SP</h2>
-                                                <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img src={ Governo } alt="governo" /></a>                                                                                                                                                                            
+                                                <a href="https://governo-de-sp.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Governo } alt="governo" /></a>                                                                                                                                                                            
                                                 <p>Um projeto feito no Proa em grupo, escolher um site e recriar o site do zero e o design. O site que escolhemos para recriar o site do Governo de SP, já que o design não agradava.</p>
                                             </div>                    
                                         </aside>
@@ -77,7 +77,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>Água na Boca</h2>
-                                                <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><img src={ Pizzaria } alt="Pizzaria" /></a>                                                                                                                                  
+                                                <a href="https://agua-na-boca.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Pizzaria } alt="Pizzaria" /></a>                                                                                                                                  
                                                 <p>Uma landing page para uma pizzaria do meu bairro.</p>
                                             </div>
                                         </aside>
@@ -86,7 +86,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>Clone do Instagram</h2>
-                                                <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><img src={ Instagram }  alt="Instagram" /></a>                                                                                        
+                                                <a href="https://clone-instagram-bc.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Instagram }  alt="Instagram" /></a>                                                                                        
                                                 <p>Este foi o um desafio no curso do Proa a criar um clone do Instagram de Maio de 2022.</p>
                                             </div>
                                         </aside> 
@@ -95,7 +95,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>Pokedex</h2>
-                                                <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><img src={ Pokedex } alt="Pokedex" /></a>
+                                                <a href="https://pokedex-ihyperbr.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Pokedex } alt="Pokedex" /></a>
                                                 <p>Esse é um projeto simples, onde eu criei uma pokedex com base no vídeo do Manual do Dev.</p>
                                             </div>
                                         </aside>
@@ -104,7 +104,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>To Do List</h2>
-                                                <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><img src={ Todolist } alt="Todolist" /></a>                                            
+                                                <a href="https://to-do-list-seven-mu.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Todolist } alt="Todolist" /></a>                                            
                                                 <p>Esse é um ToDoList simples que eu criei apenas para treinar.</p>
                                             </div>
                                         </aside>
@@ -113,7 +113,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>Blind Vision</h2>
-                                                <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><img src={ Blind } alt="Blind" /></a>                                                                                      
+                                                <a href="https://blind-vision.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Blind } alt="Blind" /></a>                                                                                      
                                                 <p>Esse foi um desafio feito no Proa onde era apenas criar uma ideia e um site básico.</p>
                                             </div>
                                         </aside>
@@ -122,7 +122,7 @@ function Projects() {
                                         <aside className="my-project">
                                             <div className="project-image">
                                                 <h2>Caoselheiro</h2>
-                                                <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img src={ Caoselheiro } alt="Blind" /></a>                                                                                      
+                                                <a href="https://caoselheiro-ecoverse.vercel.app/" rel="noreferrer" target="_blank"><img width={900} height={400} src={ Caoselheiro } alt="Blind" /></a>                                                                                      
                                                 <p>Esse foi um desafio de um processo seletivo.</p>
                                             </div>
                                         </aside>
