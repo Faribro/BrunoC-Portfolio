@@ -48,7 +48,7 @@
 }
 
 .contact-box .contact-info {
-  margin-top: 15px;  
+  margin: 25px auto;  
   color: var(--body-color);
 }
 
@@ -68,7 +68,6 @@
   font-size: 18px;
   font-weight: 600;
   padding-bottom: 15px; 
-  font-family: "Lato";
 }
 
 .contact-box:hover {
@@ -160,7 +159,10 @@
     max-width: 100%;
   }
 
-  .contact-box {padding: 30px 25px; } 
+  .contact-box {
+    height: 215px;
+    padding: 30px 25px; 
+  } 
 
   .footer-widget {
     padding-top: 80px;
