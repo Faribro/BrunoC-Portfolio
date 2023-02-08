@@ -58,19 +58,19 @@ export function Home() {
 
                             <section className='parallax-cover'>
                                 <MouseParallaxChild factorX={0.1} factorY={0.1}>
-                                    <figure class="cover-shape shape-one layer" data-depth="0.10">                                            
+                                    <figure rel="preload" class="cover-shape shape-one layer" data-depth="0.10">                                            
                                         <img rel="preload" src={ shape1 }  alt="Shape" />
                                     </figure>        
-                                    <figure class="cover-shape shape-two layer" data-depth="0.10">                                            
+                                    <figure rel="preload" class="cover-shape shape-two layer" data-depth="0.10">                                            
                                         <img rel="preload" src={ shape2 }  alt="Shape" />
                                     </figure>  
-                                    <figure class="cover-shape shape-three layer" data-depth="0.10">                                            
+                                    <figure rel="preload" class="cover-shape shape-three layer" data-depth="0.10">                                            
                                         <img rel="preload" src={ shape3 }  alt="Shape"/>
                                     </figure>  
-                                    <figure class="cover-shape shape-four layer" data-depth="0.10">                                            
+                                    <figure rel="preload" class="cover-shape shape-four layer" data-depth="0.10">                                            
                                         <img rel="preload" src={ shape4 }  alt="Shape"/>
                                     </figure>  
-                                    <figure class="cover-shape shape-five layer" data-depth="0.10">                                            
+                                    <figure rel="preload" class="cover-shape shape-five layer" data-depth="0.10">                                            
                                         <img rel="preload" src={ shape5 }  alt="Shape"/>
                                     </figure>                          
                                 </MouseParallaxChild>
