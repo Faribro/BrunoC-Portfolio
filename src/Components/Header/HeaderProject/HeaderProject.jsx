@@ -2,7 +2,7 @@ import '../Style/Header.modules.scss';
 import React, { useContext, useEffect, useState } from 'react';
 import { NavLink } from "react-router-dom";
 
-import logo from "../Images/logo.png"; 
+import logo from "../Images/logo.webp"; 
 
 import { BsFillSunFill, BsMoonFill } from "react-icons/bs"; 
 

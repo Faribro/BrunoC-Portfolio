@@ -17,11 +17,11 @@ import { Scroll } from '../../Components/ScrollTop/Scroll';
 import { BsGithub, BsLinkedin } from "react-icons/bs"; 
 import { MdArrowDownward } from "react-icons/md";
 
-import shape1  from './Images/shape-1.png';
-import shape2  from './Images/shape-2.png';
-import shape3  from './Images/shape-3.png';
-import shape4  from './Images/shape-4.png';
-import shape5  from './Images/shape-5.png';
+import shape1  from './Images/shape-1.webp';
+import shape2  from './Images/shape-2.webp';
+import shape3  from './Images/shape-3.webp';
+import shape4  from './Images/shape-4.webp';
+import shape5  from './Images/shape-5.webp';
 import perfil  from './Images/perfil.webp';
 import backgroundCover  from './Images/backgroundCover.webp';
 
@@ -59,19 +59,19 @@ export function Home() {
                             <section className='parallax-cover'>
                                 <MouseParallaxChild factorX={0.1} factorY={0.1}>
                                     <figure class="cover-shape shape-one layer" data-depth="0.10">                                            
-                                        <img src={ shape1 }  alt="Shape" />
+                                        <img rel="preload" src={ shape1 }  alt="Shape" />
                                     </figure>        
                                     <figure class="cover-shape shape-two layer" data-depth="0.10">                                            
-                                        <img src={ shape2 }  alt="Shape"/>
+                                        <img rel="preload" src={ shape2 }  alt="Shape" />
                                     </figure>  
                                     <figure class="cover-shape shape-three layer" data-depth="0.10">                                            
-                                        <img src={ shape3 }  alt="Shape"/>
+                                        <img rel="preload" src={ shape3 }  alt="Shape"/>
                                     </figure>  
                                     <figure class="cover-shape shape-four layer" data-depth="0.10">                                            
-                                        <img src={ shape4 }  alt="Shape"/>
+                                        <img rel="preload" src={ shape4 }  alt="Shape"/>
                                     </figure>  
                                     <figure class="cover-shape shape-five layer" data-depth="0.10">                                            
-                                        <img src={ shape5 }  alt="Shape"/>
+                                        <img rel="preload" src={ shape5 }  alt="Shape"/>
                                     </figure>                          
                                 </MouseParallaxChild>
                             </section>  
@@ -88,7 +88,7 @@ export function Home() {
                                     </aside>           
                                 </article>   
                                 <figure className="profile-image">
-                                    <img src={perfil} alt="perfil" />
+                                    <img rel="preload" src={perfil} alt="perfil" />
                                 </figure> 
                             </section>    
 
