@@ -1,5 +1,4 @@
 import './Style/Home.modules.scss';
-import './Style/ShapeHome.modules.scss';
 import { useState, useEffect } from 'react';
 
 import Loading from '../../Components/Loading/Loading';
@@ -17,16 +16,10 @@ import { Scroll } from '../../Components/ScrollTop/Scroll';
 import { BsGithub, BsLinkedin } from "react-icons/bs"; 
 import { MdArrowDownward } from "react-icons/md";
 
-import shape1  from './Images/shape-1.webp';
-import shape2  from './Images/shape-2.webp';
-import shape3  from './Images/shape-3.webp';
-import shape4  from './Images/shape-4.webp';
-import shape5  from './Images/shape-5.webp';
 import perfil  from './Images/perfil.webp';
 import backgroundCover  from './Images/backgroundCover.webp';
 
 import AnimatedCursor from "react-animated-cursor";
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 
 export function Home() {
 
@@ -48,33 +41,12 @@ export function Home() {
                     <div className='img-background'></div> 
                       
                     <Header /> 
-                    <MouseParallaxContainer>  
                         <main id='Home' className="cover-content">                                              
                             <div className='color-background'/>
 
                             <figure className='background-cover'>
                                 <img src={ backgroundCover } width={900} height={1010}  alt="back"/>
                             </figure>  
-
-                            <section className='parallax-cover'>
-                                <MouseParallaxChild factorX={0.1} factorY={0.1}>
-                                    <figure rel="preload" class="cover-shape shape-one layer" data-depth="0.10">                                            
-                                        <img rel="preload" width={1400} height={100} src={ shape1 }  alt="Shape" />
-                                    </figure>        
-                                    <figure rel="preload" class="cover-shape shape-two layer" data-depth="0.10">                                            
-                                        <img rel="preload" width={190} height={190} src={ shape2 }  alt="Shape" />
-                                    </figure>  
-                                    <figure rel="preload" class="cover-shape shape-three layer" data-depth="0.10">                                            
-                                        <img rel="preload" width={250} height={220} src={ shape3 }  alt="Shape"/>
-                                    </figure>  
-                                    <figure rel="preload" class="cover-shape shape-four layer" data-depth="0.10">                                            
-                                        <img rel="preload" width={300} height={270} src={ shape4 }  alt="Shape"/>
-                                    </figure>  
-                                    <figure rel="preload" class="cover-shape shape-five layer" data-depth="0.10">                   
-                                        <img rel="preload" width={130} height={130} src={ shape5 }  alt="Shape"/>
-                                    </figure>                          
-                                </MouseParallaxChild>
-                            </section>  
 
                             <section className="right-container">           
                                 <article className="info-cover">
@@ -112,7 +84,6 @@ export function Home() {
                                 </a>
                             </section>      
                         </main>      
-                    </MouseParallaxContainer>
                     <AboutMe />  
                     <Skills />  
                     <CoursesHome /> 
