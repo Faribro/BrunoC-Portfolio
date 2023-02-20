@@ -3,8 +3,8 @@
 #contact{ height: 500px; }
 
 .contact-zone{   
-  padding-top: 160px;
-  padding-bottom: 120px;
+  padding-top: 90px;
+  padding-bottom: 150px;
   background-color: var(--bg-color);   
 }
 
@@ -20,7 +20,6 @@
   font-size: 50px;
   color: var(--body-color);
   padding-top: 20px;
-  padding-bottom: 10px;
 }
 
 .boxesInfo{
@@ -76,6 +75,8 @@
   box-shadow: 0px 0px 21px 0px rgba(152, 152, 152, 0.23); 
 }
 
+.footer-zone {  padding-top: 50px; }
+
 .footer-zone p {  
   color: var(--body-color);
   margin-top: 35px; 
@@ -84,6 +85,7 @@
   line-height: 28px;   
   z-index: 3;
   position: relative; 
+  font-family: 'Kanit';
 }
 
 .footer-widget {
@@ -99,7 +101,7 @@
 }
 
 .footer-content ul li a {
-  font-size: 38px;
+  font-size: 43px;
   width: 95px;
   height: 92px;
   line-height: 87px;
@@ -122,7 +124,7 @@
 }
 
 .github-footer, .linkedin-footer{
-  width: 55px;
+  width: 48px;
   height: 30px;
   display: inline-block; 
   z-index: 3;

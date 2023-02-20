@@ -40,7 +40,7 @@ export function HeaderProject() {
 					<NavLink to="/"><img alt='Logo' src={ logo } className={`logo ${scroll < 10 ? "" : "sticky"}`}></img></NavLink>
 				</figure>
 
-				<section className="toggleArea">
+				<section className={`toggleArea ${scroll < 10 ? "" : "sticky"}`}>
 					<BsFillSunFill className='sun' />
 						<input type="checkbox" id="switch" class="toggle-control" />
 						<label onClick={context.toggleThemeMode} for="switch"></label>

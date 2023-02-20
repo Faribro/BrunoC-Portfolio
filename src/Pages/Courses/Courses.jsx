@@ -72,10 +72,10 @@ function Courses() {
                                     iconStyle={{ background: 'var(--body-color)', color: 'var(--bg-color)', boxShadow: '0 0 0 4px var(--subtitle-color)', borderRadius: '0px' }}
                                     date="07/2018"
                                     icon={ <MicrolinsIco /> } >
-                                    <h3>Meu primeiro curso e contato com a programação.</h3>   
                                     <h2 className="titleCourse">Microlins</h2>             
                                     <hr />                  
-                                    <img className="logo-institute" alt='Microlins' src={ Microlins } />    
+                                    <img className="logo-institute" alt='Microlins' src={ Microlins } /> 
+                                    <h3>Meu primeiro curso e contato com a programação.</h3>                                          
                                 </VerticalTimelineElement>
 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }} 
@@ -100,18 +100,18 @@ function Courses() {
                                         <p>Programação C# em sistemas;</p>
                                         <p>Banco de Dados.</p>
                                     </div>
-                                    <button className='main-btn'><a href='https://www.microlins.com.br/cursos' rel="noreferrer" target="_blank">SITE</a></button>
+                                    <button className='main-btn'><a href='https://www.microlins.com.br/cursos' rel="noreferrer" target="_blank">SITE DELES</a></button>
                                 </VerticalTimelineElement>
                                 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
                                     iconStyle={{ background: 'var(--body-color)', color: 'var(--bg-color)', boxShadow: '0 0 0 4px var(--subtitle-color)', borderRadius: '0px' }}                               
                                     date="02/2020"
-                                    icon={ <DankiIco /> } >
-                                    <h3>Terminando a Microlins, fiquei um pouco desanimado por ser um curso desatualizado e não ser do que eu queria.</h3>
-                                    <h3>E por anúncio no Youtube eu conheci a Danki Code.</h3>
+                                    icon={ <DankiIco /> } >                                        
                                     <h2 className="titleCourse">Danki Code</h2>             
                                     <hr />                                          
-                                    <img className="logo-institute" alt='Danki Code' src={ DankiCode }  />        
+                                    <img className="logo-institute" alt='Danki Code' src={ DankiCode }  />
+                                    <h3>Terminando a Microlins, fiquei um pouco desanimado por ser um curso desatualizado e não ser do que eu queria.</h3>
+                                    <h3>E por anúncio no Youtube eu conheci a Danki Code.</h3>        
                                 </VerticalTimelineElement>
                                 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -140,17 +140,17 @@ function Courses() {
                                         <p>Design de Web, Aplicativos;</p>
                                         <p>Marketing Digital.</p>
                                     </div>
-                                    <button className='main-btn'><a href='https://cursos.dankicode.com/cursos' rel="noreferrer" target="_blank">SITE</a></button>       
+                                    <button className='main-btn'><a href='https://cursos.dankicode.com/cursos' rel="noreferrer" target="_blank">SITE DELES</a></button>       
                                 </VerticalTimelineElement>
                             
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
                                     iconStyle={{ background: 'var(--body-color)', color: 'var(--bg-color)', boxShadow: '0 0 0 4px var(--subtitle-color)', borderRadius: '0px' }}                                
                                     date="05/2021"
                                     icon={ <ProaIco /> }>
-                                    <h3>E na busca do meu primeiro emprego, eu conheci o Proa. Um instituto que ajuda, e dá suporte para o mercado de trabalho na área de programação.</h3>
                                     <h2 className="titleCourse">Instituto PROA</h2>      
                                     <hr />                                                                                                                                                               
                                     <img className="logo-institute" alt='Proa' src={ Proa } />   
+                                    <h3>E na busca do meu primeiro emprego, eu conheci o Proa. Um instituto que ajuda, e dá suporte para o mercado de trabalho na área de programação.</h3>
                                 </VerticalTimelineElement>
                                 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -172,7 +172,7 @@ function Courses() {
                                             <p>Metodologia Ágil ( Scrum, Kanban);</p> 
                                             <p>UI/UX Design.</p>
                                         </div>        
-                                        <button className='main-btn'><a href='https://www.proa.org.br/proprofissao/' rel="noreferrer" target="_blank">SITE</a></button>                                  
+                                        <button className='main-btn'><a href='https://www.proa.org.br/proprofissao/' rel="noreferrer" target="_blank">SITE DELES</a></button>                                  
                                 </VerticalTimelineElement>
                                 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -192,18 +192,18 @@ function Courses() {
                                             <p>NextJS;</p>                                              
                                             <p>Python.</p>
                                         </div>
-                                        <button className='main-btn'><a href='https://www.udemy.com/' rel="noreferrer" target="_blank">SITE</a></button>
+                                        <button className='main-btn'><a href='https://www.udemy.com/' rel="noreferrer" target="_blank">SITE DELES</a></button>
                                 
                                 </VerticalTimelineElement>
 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
                                     iconStyle={{ background: 'var(--body-color)', color: 'var(--bg-color)', boxShadow: '0 0 0 4px var(--subtitle-color)', borderRadius: '0px' }}                                
                                     date="12/2022"
-                                    icon={ <EstacioIco /> }>
-                                        <h3>E finalmente comecei minha faculdade e escolhi a área que eu amo. Tecnologia!</h3>
+                                    icon={ <EstacioIco /> }>                                        
                                         <h2 className="titleCourse">Estácio</h2> 
                                         <hr />                                         
-                                        <img className="logo-institute" alt='Estacio' src={ Estacio } />                                  
+                                        <img className="logo-institute" alt='Estacio' src={ Estacio } />   
+                                        <h3>E finalmente comecei minha faculdade e escolhi a área que eu amo. Tecnologia!</h3>                               
                                 </VerticalTimelineElement>
 
                                 <VerticalTimelineElement contentStyle={{ background: 'var(--bg-color)', border: '2px solid var(--body-color)' }}  contentArrowStyle={{ borderRight: '9px solid  var(--body-color)' }}
@@ -219,7 +219,7 @@ function Courses() {
                                             <p>Paradigmas de Linguagens de Programação em Python</p>
                                             <p>Pensamento Computacional</p>
                                         </div>
-                                        <button className='main-btn'><a href='https://estacio.br/cursos/graduacao/analise-e-desenvolvimento-de-sistemas' rel="noreferrer" target="_blank">SITE</a></button>
+                                        <button className='main-btn'><a href='https://estacio.br/cursos/graduacao/analise-e-desenvolvimento-de-sistemas' rel="noreferrer" target="_blank">SITE DELES</a></button>
                                 </VerticalTimelineElement>
                             </VerticalTimeline>               
                         </section>   

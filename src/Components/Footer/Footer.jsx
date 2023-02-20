@@ -8,45 +8,45 @@ import { SlLocationPin } from "react-icons/sl";
 export function Footer() { 
     return (
         <>
-            <main id="Contact">                    
-                <section className="contact-zone" data-aos="fade-up"> 
-                    <article className="container">
-                        <section className="section-title">
+            <div id="Contact">                    
+                <main className="contact-zone" data-aos="fade-up"> 
+                    <section className="container">
+                        <article className="section-title">
                             <h2 className="title">Entre em contato</h2>
                             <hr />
-                        </section> 
+                        </article> 
 
-                        <section className="boxesInfo">
-                            <article className="boxContainer" data-aos="fade-up-right">
-                                <aside className="contact-box">
+                        <article className="boxesInfo">
+                            <aside className="boxContainer" data-aos="fade-up-right">
+                                <div className="contact-box">
                                     <div className="contact-info">
                                         <SlLocationPin className='Location' />                                      
                                         <h6 className="contact-title">Endereço</h6>
                                         <p>Rua Maria Tereza , Jardim Novo Horizonte, Jandira-SP, Brasil</p>
                                     </div>
-                                </aside>
-                            </article>
-                            <article className="boxContainer" data-aos="fade-up">
-                                <aside className="contact-box">
+                                </div>
+                            </aside>
+                            <aside className="boxContainer" data-aos="fade-up">
+                                <div className="contact-box">
                                     <div className="contact-info">
                                         <BsPhone className='Phone' />
                                         <h6 className="contact-title">Telefone</h6>
                                         <p>+55 (11) 94388-4494</p>
                                     </div>
-                                </aside>
-                            </article>
-                            <article className="boxContainer" data-aos="fade-up">
-                                <aside className="contact-box">
+                                </div>
+                            </aside>
+                            <aside className="boxContainer" data-aos="fade-up">
+                                <div className="contact-box">
                                     <div className="contact-info">
                                         <TfiEmail className='Email' />
                                         <h6 className="contact-title">E-mail</h6>
                                         <p>bruno.costa.c06@gmail.com</p>
                                     </div>
-                                </aside>
-                            </article>
-                        </section>
-                    </article>
-                </section>
+                                </div>
+                            </aside>
+                        </article>
+                    </section>
+                </main>
             
                 <footer id="footer" className="footer-zone" data-aos="zoom-in">                            
                     <section className="footer-widget">
@@ -66,7 +66,7 @@ export function Footer() {
                         </div>
                     </section>                                
                 </footer>
-            </main>        
+            </div>        
         </>
     );
 }
