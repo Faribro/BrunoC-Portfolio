@@ -1,18 +1,13 @@
 import './Style/Error.modules.scss';
-import './Style/Shape.modules.scss';
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 
 import Loading from '../../Components/Loading/Loading';
 
-import { AiFillHtml5  } from "react-icons/ai"; 
-import { FaCss3Alt, FaReact, FaSass, FaJava, FaPython, FaBootstrap  } from "react-icons/fa"; 
-import { SiPhp, SiJavascript, SiTypescript, SiAdobephotoshop  } from "react-icons/si"; 
-
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 import AnimatedCursor from "react-animated-cursor";
-import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
+import MouseParallax from '../../Common/Context/MouseParallax';
 
 function Error() {
   
@@ -31,22 +26,9 @@ function Error() {
           <Loading />:
           <div>
               <AnimatedCursor innerSize={8} outerSize={35}  innerScale={1} outerScale={1.7} outerAlpha={0} hasBlendMode={true} outerStyle={{border: '3px solid var(--subtitleInvert-color)'}} innerStyle={{backgroundColor: 'var(--subtitleInvert-color)'}} />
-              <MouseParallaxContainer>
+              <div>
                 <section className="error-404">           
-                  <MouseParallaxChild factorX={0.04} factorY={0.1}>
-                      <AiFillHtml5 className="erro-shape erro-icon-one" />
-                      <FaCss3Alt className="erro-shape erro-icon-two" />
-                      <SiJavascript className="erro-shape erro-icon-three" />
-                      <FaPython className="erro-shape erro-icon-four" />
-                      <FaJava className="erro-shape erro-icon-five" />
-                      <SiTypescript className="erro-shape erro-icon-six" />
-                      <FaBootstrap className="erro-shape erro-icon-seven" />
-                      <FaReact className="erro-shape erro-icon-eight" />
-                      <SiPhp className="erro-shape erro-icon-nine" />
-                      <SiAdobephotoshop className="erro-shape erro-icon-ten" />
-                      <FaSass className="erro-shape erro-icon-eleven" />
-                  </MouseParallaxChild>
-
+                  <MouseParallax />
                   <article className="container-erro"> 
                     <h2 className="text-404">404</h2>   
                       <div className='text-erro'>
@@ -56,7 +38,7 @@ function Error() {
                       </div>
                   </article>
                 </section>	           
-              </MouseParallaxContainer>   
+              </div>   
           </div>         
         }         
       </>	    
