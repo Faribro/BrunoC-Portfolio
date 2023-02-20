@@ -14,7 +14,7 @@ import Caoselheiro from '../../Pages/Projects/Images/caoselheiro.webp';
 export function ProjectHome() {
     return (
         <>    
-            <main id="Project" className="projects-Home">
+            <main id="Project" className="projects-home">
                 <section className="container">
                     <section className="section-title">
                         <h2 className="title">Projetos</h2>

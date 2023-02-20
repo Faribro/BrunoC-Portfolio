@@ -49,7 +49,7 @@ export function Header() {
 
 	return (
 	<>
-		<header style={{ background: backgroundColorScroll }} className={`navigation ${scroll < 10 ? "" : "sticky"}`}>  
+		<header style={{ background: backgroundColorScroll }} className={`navigation ${scroll < 50 ? "" : "sticky"}`}>  
 			<figure className='container-logo'>
 				<img alt='Logo' src={ logo } className={`logo ${scroll < 10 ? "" : "sticky"}`}></img>
 			</figure>

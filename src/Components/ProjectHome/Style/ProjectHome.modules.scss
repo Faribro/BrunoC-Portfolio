@@ -1,23 +1,23 @@
 @import url(../../../App.scss);
 
-.projects-Home{
+.projects-home{
   background-color: var(--bg-color);
   color: var(--body-color);
-  width: 100%;
+  width: 100%;     
+  padding-top: 160px;
   padding-bottom: -120px;
   margin: auto;
 } 
 
-.projects-Home img{object-fit: cover;}
+.projects-home img{object-fit: cover;}
 
-.projects-Home .container{
+.projects-home .container{
   max-width: 1300px;   
-  padding-top: 160px;
   display: block;
   margin: auto;
 }
 
-.projects-Home .container p{ color: var(--body-color);}
+.projects-home .container p{ color: var(--body-color);}
 
 .section-title p{ 
   width: 90%; 
@@ -151,7 +151,7 @@
 ===========================*/
    
 @media only screen and (min-width: 768px) and (max-width: 991px) {   
-    .projects-Home{
+    .projects-home{
         padding-top: 90px;
         padding-bottom: 100px; 
     } 
@@ -178,7 +178,7 @@
 }
 
 @media (max-width: 767px) {
-    .projects-Home{
+    .projects-home{
         padding-top: 150px;
         padding-bottom: 80px; 
     } 
