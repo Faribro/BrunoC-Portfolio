@@ -41,8 +41,8 @@ export function Skills() {
 
     return (
         <>
-            <div id='Skills'>
-                <main className="skills-zone">            
+            <div>
+                <main id='Skills' className="skills-zone">            
                     <section className="section-title">
                         <h2 className="title">Skills</h2>
                         <hr />

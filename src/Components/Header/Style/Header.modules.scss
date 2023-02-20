@@ -30,12 +30,12 @@ header nav{
 }
 
 .logo.sticky{
-	width: 38px;
-	height: 38px;
+	width: 43px;
+	height: 43px;
 }
 
 .navigation.sticky {
-    padding: 20px 0;
+    padding: 25px 0;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -134,7 +134,7 @@ header nav{
     background-color: var(--subtitle-color);
 }
 
-.toggleArea.sticky{ top: 20%; }
+.toggleArea.sticky{ top: 25%; }
 
 .toggleArea{
     position: absolute;
