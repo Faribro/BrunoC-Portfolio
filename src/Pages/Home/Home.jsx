@@ -56,7 +56,7 @@ export function Home() {
                                         <div className="professions-cover">           
                                             <Type />
                                         </div>                                            
-                                        <a className="cover-btn" without rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1yN62QAxfL2RHPrZvQx9l3FpdnuzN2ZuK/view?usp=share_link">Baixar CV</a>
+                                        <a className="cover-btn" without rel="noreferrer" target="_blank" href="https://drive.google.com/file/d/1pqFAqsvr1371CYWpVH2jEXGej3EFP3fB/view?usp=share_link">Baixar CV</a>
                                     </aside>           
                                 </article>   
                                 <figure className="profile-image">
